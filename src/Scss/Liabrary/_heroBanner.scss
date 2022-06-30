@@ -1,0 +1,27 @@
+.header {
+    padding-top: 49px;
+}
+
+.hero-container {
+    background-color: black;
+    color: $col-white;
+    place-items: center;
+    padding: 103px;
+
+
+}
+
+.hero-image {
+    padding: 16px 0;
+    width: 100%;
+}
+
+.subheader {
+    visibility: hidden;
+}
+
+.bar {
+    width: 102px;
+    height: 8px;
+    background-color: $primary-brand;
+}

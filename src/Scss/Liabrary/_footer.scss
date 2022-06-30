@@ -1,0 +1,94 @@
+.rectangle {
+    background-color: $gray-l1;
+    height: 4px;
+    margin-top: 128px;
+}
+
+.main-footer {
+    padding-bottom: 32px;
+
+    ul {
+        padding-top: 16px;
+    }
+
+    ul li {
+        list-style-type: none;
+        text-align: left;
+        font-size: 16px;
+        color: $gray-3;
+        letter-spacing: 0px;
+        font-weight: normal;
+    }
+
+    img {
+        padding: 11px 5px 5px 0;
+    }
+
+    .img1 {
+        width: 20px;
+        // height: 20px;
+    }
+
+    .img2 {
+        width: 13px;
+        // height: 20px;
+    }
+
+    .img3 {
+        width: 22px;
+        // height: 18px;
+    }
+
+
+    .foot-head {
+        font-size: 16px;
+        font-weight: 600;
+        color:$col-black;
+        padding-top: 44px;
+        text-align: left;
+
+    }
+}
+
+.sub-footer {
+    padding: 28px 0;
+    // border-top: 1px solid #00000033;
+
+
+    ul li {
+        display: inline;
+        list-style-type: none;
+        text-decoration: underline;
+        padding-left: 19px;
+        font-size: 14px;
+        color: $col-black;
+        font: normal normal normal 14px/18px Proxima Nova;
+    }
+
+    .info {
+        text-align: center;
+        font-style: normal normal normal 14px/18px Muli;
+        letter-spacing: 0px;
+        color: $gray-3;
+    }
+
+    .details {
+        text-align: right;
+    }
+
+
+
+}
+
+@media (max-width: 768px) {
+    .sub-footer {
+        .logo-align{
+        text-align: center;
+    }
+    .details {
+        text-align: center;
+    }
+
+    
+}
+}

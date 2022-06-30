@@ -1,0 +1,6 @@
+@mixin common-font($par1, $par2) {
+    font-style: $par1;
+    color: $par2;
+    letter-spacing: 0;
+    
+}

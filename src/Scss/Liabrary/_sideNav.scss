@@ -1,0 +1,48 @@
+//sidenav.css
+.sidenav {
+    padding-top: 45px;
+    text-align: left;
+    color: $col-dark-gray;
+    padding-right: 37px;
+
+    p {
+        font-size: 16px;
+    }
+
+
+    h6 {
+        font-size: 16px;
+        font-weight: 600;
+        padding-top: 15px;
+        padding-bottom: 17px;
+
+        a {
+            text-decoration: underline;
+
+        }
+
+        .filter {
+            font-size: 20px;
+            padding-top: 35px;
+            padding-bottom: 16px;
+        }
+    }
+
+    hr {
+        padding-left: 10px;
+    }
+
+    label {
+        font-size: 16px;
+
+        span {
+            padding: 5px;
+        }
+    }
+
+    .option {
+        padding: 17px 0;
+    }
+
+    
+}

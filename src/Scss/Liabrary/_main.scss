@@ -1,0 +1,29 @@
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+hr{
+    border: 1px solid #e5e5e7;
+}
+.bold{
+    border: 2px solid #e5e5e7;
+}
+//.body-container.css
+
+.body-container {
+    padding-top: 45px;
+    text-align: left;
+    display: flex;
+
+    select {
+        margin-left: auto;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+}

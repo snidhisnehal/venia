@@ -6,8 +6,8 @@
     background-color: black;
     color: $col-white;
     place-items: center;
-    padding: 103px;
-
+    padding: 85px;
+    font: normal normal 600 36px/42px Source Serif Pro;
 
 }
 
@@ -15,13 +15,27 @@
     padding: 16px 0;
     width: 100%;
 }
-
-.subheader {
+ .subheader {
     visibility: hidden;
+    font: normal normal 600 36px/42px Source Serif Pro;
+
 }
 
 .bar {
     width: 102px;
     height: 8px;
     background-color: $primary-brand;
+}
+
+@media (max-width: 768px) {
+    .subheader{
+        visibility: visible;
+        
+    }
+    .header{
+        padding-top: 0;
+        display:flex;
+        flex-direction: column-reverse;
+        
+    }
 }

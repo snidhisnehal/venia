@@ -7,23 +7,26 @@
     box-sizing: border-box;
 
 }
+html{
+    font-size: 62.5%;
+}
 hr{
-    border: 1px solid #e5e5e7;
+    border: .1rem solid #e5e5e7;
 }
 .bold{
-    border: 2px solid #e5e5e7;
+    border: .2rem solid #e5e5e7;
 }
 //.body-container.css
 
 .body-container {
-    padding-top: 45px;
+    padding-top: 4.5rem;
     text-align: left;
     display: flex;
 
     select {
         margin-left: auto;
-        border-radius: 5px;
-        padding: 5px;
+        border-radius: .5rem;
+        padding: .5rem;
     }
 
 }

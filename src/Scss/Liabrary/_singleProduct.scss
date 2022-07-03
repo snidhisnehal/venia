@@ -1,5 +1,5 @@
 .main {
-    padding: 33px 100px 0 100px;
+    padding: 33px 100px 30px 100px;
 
 }
 
@@ -86,12 +86,12 @@
 
         .size {
             span {
-                padding-right: 16px;
+                padding-right: 1.6rem;
             }
 
             button {
-                width: 64px;
-                height: 40px;
+                width: 5.4rem;
+                height: 4rem;
                 border: 2px solid var(--gray-m1);
                 background: $col-white 0% 0% no-repeat padding-box;
                 border: 2px solid #91959C;
@@ -190,5 +190,18 @@
         color:$col-black;
         padding-top: 24px;
         padding-bottom: 16px;
+    }
+}
+@media (min-width: 0px) and (max-width: 767px){
+    .detail-info {.color .add-sub {
+        text-align: center;
+
+    }
+    button .cart-add{
+        place-items: center;
+    }
+}
+    .main h6,h3{
+        text-align: center;
     }
 }

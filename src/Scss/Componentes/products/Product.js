@@ -26,9 +26,12 @@ const Product = () => {
         <div className='aem-Grid aem-Grid--12 card-container'>
             
             
-        {data.map(val => {
-          return (<Card key={val.id} id={val.id} img={val.image} title={val.title} price={val.price} />)
-        })}
+        {/* {data.map(val => { */}
+          
+        {/* //   <Card key={val.id} id={val.id} img={val.image} title={val.title} price={val.price} /> */}
+        <Card data={data}/>
+          
+        
         
 
       </div>

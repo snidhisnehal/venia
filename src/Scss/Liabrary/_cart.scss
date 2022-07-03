@@ -1,5 +1,6 @@
 .cart-Container {
     padding: 10px;
+
     h1 {
         font: normal normal 600 48px/45px Source Serif Pro;
         letter-spacing: 0px;
@@ -13,16 +14,38 @@
 
         .added-product {
             display: flex;
-            img{
+
+            img {
                 width: auto;
-height: 199px;
+                height: 199px;
+                border: 1px solid #D1D3D6;
             }
+
+            .cart-prod-detail {
+                padding: 5px;
+
+                b {
+                    text-align: left;
+                    font: normal normal 600 20px/25px Muli;
+                    letter-spacing: 0px;
+                    color: #172026;
+                }
+
+                p {
+                    font: normal normal normal 16px/24px Muli;
+                    letter-spacing: 0px;
+                    color: #172026;
+
+                }
+            }
+
         }
     }
 
-    .btn{
+    .btn {
 
         padding-top: 55px;
+
         .btn-sub {
             width: 32px;
             height: 32px;
@@ -30,20 +53,20 @@ height: 199px;
             border-radius: 50%;
             margin-right: 2px;
         }
-    
+
         .btn-count {
             width: 88px;
             height: 40px;
             border-radius: 8px;
             margin-right: 2px;
             border: 2px solid #B5B7BC;
-    
+
         }
-    
+
 
     }
 
-    
+
     .option {
         font: normal normal 600 12px/14px Muli;
         letter-spacing: 0px;
@@ -52,18 +75,44 @@ height: 199px;
     }
 
     .pricing-total {
-        text-align: left;
-        border:1px solid black;
-        padding: 10px;
-        h4{
-            padding-bottom: 24px;
-        }
-        p{ 
-            padding-bottom: 16px;
-            span {
-            float: right;
-        }}
         
+        width: 435px;
+        height: 463px;
+        // border: 1px solid black;
+        padding: 10px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 0px 8px #0000000D;
+        border: 1px solid #D1D3D6;
+        border-radius: 2px;
+
+        h4 {
+            padding-top: 32px;
+            padding-bottom: 24px;
+            text-align: left;
+        }
+
+        p {
+            padding-bottom: 16px;
+            font: normal normal normal 16px/24px Muli;
+            letter-spacing: 0px;
+            color: #172026;
+            text-align: left;
+            span {
+                float: right;
+            }
+        }
+         .Primary-brand{
+            font: normal normal bold 14px/16px Muli;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            opacity: 1;
+            background: #1F39FF 0% 0% no-repeat padding-box;
+            border-radius: 28px;
+            border: none;
+            padding: 11px 73px 11px 73px;
+        }
+
     }
 
 

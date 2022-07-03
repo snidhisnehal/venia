@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "43ced67714e352937e42",
-    "url": "/venia/static/css/main.f1324aa7.chunk.css"
+    "revision": "6169ff01419afdb9cd2a",
+    "url": "/venia/static/css/main.6a5cedaa.chunk.css"
   },
   {
-    "revision": "43ced67714e352937e42",
-    "url": "/venia/static/js/main.43ced677.chunk.js"
+    "revision": "6169ff01419afdb9cd2a",
+    "url": "/venia/static/js/main.6169ff01.chunk.js"
   },
   {
     "revision": "38ecc02d009634cff82d",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/venia/static/media/chevron-down.d3654e1f.svg"
   },
   {
-    "revision": "e92068b890cb95b45dd6cf5373128bf4",
+    "revision": "6e5535fa3545f58459e5258704df8872",
     "url": "/venia/index.html"
   }
 ];

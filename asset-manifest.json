@@ -1,7 +1,7 @@
 {
-  "main.css": "/venia/static/css/main.f1324aa7.chunk.css",
-  "main.js": "/venia/static/js/main.43ced677.chunk.js",
-  "main.js.map": "/venia/static/js/main.43ced677.chunk.js.map",
+  "main.css": "/venia/static/css/main.6a5cedaa.chunk.css",
+  "main.js": "/venia/static/js/main.6169ff01.chunk.js",
+  "main.js.map": "/venia/static/js/main.6169ff01.chunk.js.map",
   "static/js/1.38ecc02d.chunk.js": "/venia/static/js/1.38ecc02d.chunk.js",
   "static/js/1.38ecc02d.chunk.js.map": "/venia/static/js/1.38ecc02d.chunk.js.map",
   "static/js/2.c2a5fc73.chunk.js": "/venia/static/js/2.c2a5fc73.chunk.js",
@@ -19,8 +19,8 @@
   "static/media/Hero-Banner.png": "/venia/static/media/Hero-Banner.9f1d9405.png",
   "static/media/share-2.svg": "/venia/static/media/share-2.76b454cc.svg",
   "static/media/chevron-down.svg": "/venia/static/media/chevron-down.d3654e1f.svg",
-  "static/css/main.f1324aa7.chunk.css.map": "/venia/static/css/main.f1324aa7.chunk.css.map",
+  "static/css/main.6a5cedaa.chunk.css.map": "/venia/static/css/main.6a5cedaa.chunk.css.map",
   "index.html": "/venia/index.html",
-  "precache-manifest.50cc2fb73357c60f457d90e527eeef0b.js": "/venia/precache-manifest.50cc2fb73357c60f457d90e527eeef0b.js",
+  "precache-manifest.06ad4ed9b235cd4afa7fc9c3e8b33149.js": "/venia/precache-manifest.06ad4ed9b235cd4afa7fc9c3e8b33149.js",
   "service-worker.js": "/venia/service-worker.js"
 }

@@ -1,30 +1,44 @@
 .main {
-    padding: 33px 100px 30px 100px;
-
+    padding: 3.3rem 10rem 3rem 10rem;
+   p{
+    text-align: left;
+    font: normal normal normal 1.6rem/2.4rem Muli;
+    letter-spacing: 0px;
+    color: $col-black;
+    padding-right: 1rem;
+   }
 }
 
 .single {
 
     img {
         width: 100%;
-        height: 120px;
-        // border: 1px solid gray;
-        padding: 0 17px 16px 0;
+        height: 12rem;
+        // border: 1rem solid gray;
+        padding: 0 1.7rem 1.6rem 0;
 
     }
 
     .down {
-        padding: 0 43px 83px 29px;
+        padding: 0 4.3rem 8.3rem 2.9rem;
 
     }
 
 }
 
 .full-image {
+    p {
+        display: none;
+        text-align: left;
+        font: normal normal normal 1.6rem/2.4rem Muli;
+        letter-spacing: 0px;
+        color: $col-black;
+    }
+
     img {
         width: 100%;
-        height: 680px;
-        padding-right: 33px;
+        height: 68rem;
+        padding-right: 3.3rem;
     }
 
 }
@@ -34,15 +48,15 @@
 
 
     h3 {
-        font: normal normal 600 36px/45px Source Serif Pro;
-        letter-spacing: 0px;
+        font: normal normal 600 3.6rem/4.5rem Source Serif Pro;
+        letter-spacing: 0rem;
         color: $col-black;
     }
 
     .checked {
-        width: 16px;
-        height: 15px;
-        padding: 1px;
+        width: 1.6rem;
+        height: 1.5rem;
+        padding: .1rem;
 
     }
 
@@ -51,14 +65,14 @@
     }
 
     .descrition {
-        padding-bottom: 16px;
+        padding-bottom: 1.6rem;
     }
 
 
 
     .color {
         .img-color span {
-            padding-right: 16px;
+            padding-right: 1.6rem;
         }
 
         .add-sub {
@@ -69,14 +83,14 @@
 
 
         .cart-add {
-            width: 318px;
-            height: 40px;
+            width: 31.8rem;
+            height: 4rem;
             /* UI Properties */
             background: var(--primary-brand) 0% 0% no-repeat padding-box;
             background: $primary-brand 0% 0% no-repeat padding-box;
-            border-radius: 28px;
+            border-radius: 2.8rem;
             border: none;
-            margin-top: 40px;
+            margin-top: 4rem;
 
             a {
                 color: $col-white;
@@ -92,33 +106,33 @@
             button {
                 width: 5.4rem;
                 height: 4rem;
-                border: 2px solid var(--gray-m1);
+                border: .2rem solid var(--gray-m1);
                 background: $col-white 0% 0% no-repeat padding-box;
-                border: 2px solid #91959C;
-                border-radius: 6px;
+                border: .2rem solid $border-gray;
+                border-radius: .6rem;
                 text-align: center;
-                font: normal normal 600 16px/20px Muli;
+                font: normal normal 600 1.6rem/2rem Muli;
                 letter-spacing: 0.32px;
                 color: $gray-3;
             }
 
             .like-share img {
-                width: 18px;
-                height: 16px;
+                width: 1.8rem;
+                height: 1.6rem;
             }
         }
 
         h6 {
-            padding: 16px 0;
-            font: normal normal 600 20px/30px Muli;
-            letter-spacing: 0px;
+            padding: 1.6rem 0;
+            font: normal normal 600 2rem/3rem Muli;
+            letter-spacing: 0rem;
             color: $col-black;
         }
 
         img {
-            //     width: 64px;
-            //     height: 40px;
-            border-radius: 5px;
+            //     width: 64rem;
+            //     height: 40rem;
+            border-radius: .5rem;
         }
 
         .image1 {
@@ -138,20 +152,20 @@
         }
 
         .like-share {
-            padding-left: 78px;
-            padding-top: 24px;
+            padding-left: 7.8rem;
+            padding-top: 2.4rem;
             letter-spacing: 0.32px;
-            font: normal normal 600 16px/20px Muli;
+            font: normal normal 600 1.6rem/2rem Muli;
 
             .heart img {
-                width: 18px;
-                height: 18px;
+                width: 1.8rem;
+                height: 1.8rem;
             }
 
             .share img {
-                width: 20px;
-                height: 18px;
-                margin-left: 32px;
+                width: 2rem;
+                height: 1.8rem;
+                margin-left: 3.2rem;
 
             }
         }
@@ -165,43 +179,58 @@
     text-align: left;
 
     p {
-        font: normal normal normal 16px/24px Muli;
-        letter-spacing: 0px;
+        font: normal normal normal 1.6rem/2.4rem Muli;
+        letter-spacing: 0rem;
         color: $col-black;
     }
 
     ul li {
         list-style-type: none;
-        font: normal normal 600 16px Muli;
-        letter-spacing: 0px;
+        font: normal normal 600 1.6rem Muli;
+        letter-spacing: 0rem;
         color: $col-black;
     }
 
     h3 {
-        font: normal normal 600 36px/45px Source Serif Pro;
-        letter-spacing: 0px;
+        font: normal normal 600 3.6rem/4.5rem Source Serif Pro;
+        letter-spacing: 0rem;
         color: $col-black;
-       
+
     }
 
     h6 {
-        font: normal normal 600 20px/25px Muli;
-        letter-spacing: 0px;
-        color:$col-black;
-        padding-top: 24px;
-        padding-bottom: 16px;
+        font: normal normal 600 2rem/2.5rem Muli;
+        letter-spacing: 0rem;
+        color: $col-black;
+        padding-top: 2.4rem;
+        padding-bottom: 1.6rem;
     }
 }
-@media (min-width: 0px) and (max-width: 767px){
-    .detail-info {.color .add-sub {
-        text-align: center;
 
+@media (min-width: 320px) and (max-width: 767px) {
+    .detail-info {
+        .catogatry {
+            display: none;
+        }
+
+        // .color .add-sub {
+        //     text-align: center;
+
+        // }
+
+        // button .cart-add {
+        //     place-items: center;
+        // }
     }
-    button .cart-add{
-        place-items: center;
-    }
-}
-    .main h6,h3{
-        text-align: center;
+
+    // .main h6,
+    // // h3 {
+    // //     text-align: center;
+    // // }
+
+    .full-image {
+        p {
+            display: block;
+        }
     }
 }

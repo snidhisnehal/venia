@@ -1,20 +1,21 @@
 //sidenav.css
 .sidenav {
-    padding-top: 45px;
+    padding-top: 6.8rem;
     text-align: left;
     color: $col-dark-gray;
-    padding-right: 37px;
+    padding-right: 3.7rem;
 
     p {
-        font-size: 16px;
+        font: normal normal normal 1.6rem/2.4rem Muli;
     }
 
 
     h6 {
-        font-size: 16px;
-        font-weight: 600;
-        padding-top: 15px;
-        padding-bottom: 17px;
+        font: normal normal normal 2rem/1.4rem Muli;
+
+        color: $col-dark-gray;
+        padding-top: 1.5rem;
+        padding-bottom: 1.7rem;
 
         a {
             text-decoration: underline;
@@ -22,27 +23,27 @@
         }
 
         .filter {
-            font-size: 20px;
-            padding-top: 35px;
-            padding-bottom: 16px;
+            font-size: 2rem;
+            padding-top: 3.5rem;
+            padding-bottom: 1.6rem;
         }
     }
 
     hr {
-        padding-left: 10px;
+        padding-left: 1rem;
     }
 
     label {
-        font-size: 16px;
+        font-size: 1.6rem;
 
         span {
-            padding: 5px;
+            padding: .5rem;
         }
     }
 
     .option {
-        padding: 17px 0;
+        padding: 1.7rem 0;
     }
 
-    
+
 }

@@ -36,13 +36,14 @@ const SingleItem = ({data}) => {
                             <img src={Down} alt="carousal-down" className='down' />
                         </div>
                         <div className='aem-GridColumn aem-GridColumn--default--10 aem-GridColumn--phone--12 full-image'>
+                            <p>Clothing / Women’s / Outerwear</p>
                             <img src={data.image} alt="Product" />
                         </div>
                     </div>
                 </div>
 
                 <div className='aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12 detail-info'>
-                    <p>Clothing / Women’s / Outerwear</p>
+                    <p className='catogatry'>Clothing / Women’s / Outerwear</p>
                      {/* <h3>{ productTitle}</h3>  */}
                     <h3>{data.title}</h3>
                     <b>${data.price}</b>
@@ -50,7 +51,7 @@ const SingleItem = ({data}) => {
                         <img src={Star} alt="Star" className='checked' />
                         <img src={Star} alt="Star" className='checked' />
                         <img src={Star} alt="Star" className='checked' />
-                        <img src={Star} alt="Star" className='checked' /><span>({data.count})</span></p>
+                        <img src={Star} alt="Star" className='checked' />(<span>175</span>)</p>
                     {/* <p className='descrition'>{data.description?.substr(0,80)}</p> */}
                     <p>{data.description}</p>
                     <hr />

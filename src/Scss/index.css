@@ -5742,9 +5742,15 @@ hr {
 }
 
 nav {
-  padding-top: 16px;
+  padding-top: 1.6rem;
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
   place-items: center;
-  padding-bottom: 16px;
+  padding-bottom: 1.6rem;
+  z-index: 1;
+  background-color: #FFFFFF;
+  border-bottom: 0.2rem solid #E5E5E7;
 }
 nav .logo-align {
   display: flex;
@@ -5755,14 +5761,14 @@ nav ul {
 }
 nav ul li {
   display: inline;
-  padding-right: 0px;
-  padding-left: 32px;
-  padding-top: 14px;
-  height: 20px;
-  font-style: normal normal 600 16px/24px Muli;
-  font-size: 16px;
+  padding-right: 0rem;
+  padding-left: 3.2rem;
+  padding-top: 1.4rem;
+  height: 2rem;
+  font-style: normal normal 600 1.6rem/2.4rem Muli;
+  font-size: 1.6rem;
   font-weight: 600;
-  letter-spacing: 0px;
+  letter-spacing: 0rem;
   color: #1B252C;
   opacity: 1;
 }
@@ -5770,47 +5776,44 @@ nav ul li a {
   text-align: right;
 }
 nav ul li .img-1 {
-  width: 24px;
-  height: 24px;
-  padding-right: 8px;
+  width: 2.4rem;
+  height: 2.4rem;
+  padding-right: 0.8rem;
 }
 nav ul li .img-2 {
-  width: 21px;
-  height: 22px;
-  padding-right: 8px;
+  width: 2.1rem;
+  height: 2.2rem;
+  padding-right: 0.8rem;
 }
 nav ul li .img-3 {
-  width: 22px;
-  height: 24px;
-  padding-right: 8px;
+  width: 2.2rem;
+  height: 2.4rem;
+  padding-right: 0.8rem;
 }
 nav .toggle {
-  padding-top: 18px;
-  padding-left: 18px;
+  padding-top: 1.8rem;
+  padding-left: 1.8rem;
 }
 nav .hamburger {
   border: 0;
-  height: 40px;
-  width: 40px;
-  padding: 0.5rem;
+  height: 4rem;
+  width: 4rem;
+  padding: 0.05rem;
   border-radius: 50%;
-  background-color: white;
+  background-color: #FFFFFF;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
   top: 35%;
-  right: 25px;
+  right: 2.5rem;
   transform: translateY(-50%);
   display: none;
 }
-nav .hamburger:hover {
-  background-color: #2642af;
-}
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 32rem) and (max-width: 76.7rem) {
   nav .hamburger {
     display: block;
   }
   nav .logo {
-    padding-left: 96px;
+    padding-left: 9.6rem;
   }
   nav .main-menu {
     display: none;
@@ -5820,7 +5823,7 @@ nav .hamburger:hover {
     display: contents;
   }
   nav .sign-in li {
-    padding-right: 12px;
+    padding-right: 1.2rem;
   }
   nav .sign-in span {
     display: none;
@@ -5830,13 +5833,21 @@ nav .hamburger:hover {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .sign-in span {
+    display: none;
+  }
+  .sign-in .img-2 {
+    display: none;
+  }
+}
 .filter-container {
   display: block;
   position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
+  padding-left: 3.5rem;
+  margin-bottom: 1.2rem;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 2.2rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -5855,11 +5866,11 @@ nav .hamburger:hover {
   position: absolute;
   top: 0;
   left: 0;
-  height: 24px;
-  width: 24px;
+  height: 2.4rem;
+  width: 2.4rem;
   background-color: #FFFFFF;
-  border: 2px solid #91959c;
-  border-radius: 3px;
+  border: 0.2rem solid #91959c;
+  border-radius: 0.3rem;
 }
 
 .container:hover input ~ .checkmark {
@@ -5869,7 +5880,7 @@ nav .hamburger:hover {
 .container input:checked ~ .checkmark {
   background-color: #FFFFFF;
   border: solid #1F39FF;
-  border-width: 2px;
+  border-width: 0.2rem;
 }
 
 .checkmark:after {
@@ -5883,69 +5894,83 @@ nav .hamburger:hover {
 }
 
 .filter-container .checkmark:after {
-  left: 13px;
-  top: -7px;
-  width: 4px;
-  height: 20px;
+  left: 1.3rem;
+  top: -0.7rem;
+  width: 0.4rem;
+  height: 2rem;
   border: solid #1F39FF;
   z-index: 2;
-  border-width: 0 2px 2px 0;
+  border-width: 0 0.2rem 0.2rem 0;
   transform: rotate(45deg);
 }
 
 .main {
-  padding: 33px 100px 30px 100px;
+  padding: 3.3rem 10rem 3rem 10rem;
+}
+.main p {
+  text-align: left;
+  font: normal normal normal 1.6rem/2.4rem Muli;
+  letter-spacing: 0px;
+  color: #172026;
+  padding-right: 1rem;
 }
 
 .single img {
   width: 100%;
-  height: 120px;
-  padding: 0 17px 16px 0;
+  height: 12rem;
+  padding: 0 1.7rem 1.6rem 0;
 }
 .single .down {
-  padding: 0 43px 83px 29px;
+  padding: 0 4.3rem 8.3rem 2.9rem;
 }
 
+.full-image p {
+  display: none;
+  text-align: left;
+  font: normal normal normal 1.6rem/2.4rem Muli;
+  letter-spacing: 0px;
+  color: #172026;
+}
 .full-image img {
   width: 100%;
-  height: 680px;
-  padding-right: 33px;
+  height: 68rem;
+  padding-right: 3.3rem;
 }
 
 .detail-info {
   text-align: left;
 }
 .detail-info h3 {
-  font: normal normal 600 36px/45px Source Serif Pro;
-  letter-spacing: 0px;
+  font: normal normal 600 3.6rem/4.5rem Source Serif Pro;
+  letter-spacing: 0rem;
   color: #172026;
 }
 .detail-info .checked {
-  width: 16px;
-  height: 15px;
-  padding: 1px;
+  width: 1.6rem;
+  height: 1.5rem;
+  padding: 0.1rem;
 }
 .detail-info p span {
   text-decoration: underline;
 }
 .detail-info .descrition {
-  padding-bottom: 16px;
+  padding-bottom: 1.6rem;
 }
 .detail-info .color .img-color span {
-  padding-right: 16px;
+  padding-right: 1.6rem;
 }
 .detail-info .color .add-sub {
   text-align: left;
 }
 .detail-info .color .cart-add {
-  width: 318px;
-  height: 40px;
+  width: 31.8rem;
+  height: 4rem;
   /* UI Properties */
   background: var(--primary-brand) 0% 0% no-repeat padding-box;
   background: #1F39FF 0% 0% no-repeat padding-box;
-  border-radius: 28px;
+  border-radius: 2.8rem;
   border: none;
-  margin-top: 40px;
+  margin-top: 4rem;
 }
 .detail-info .color .cart-add a {
   color: #FFFFFF;
@@ -5957,27 +5982,27 @@ nav .hamburger:hover {
 .detail-info .color .size button {
   width: 5.4rem;
   height: 4rem;
-  border: 2px solid var(--gray-m1);
+  border: 0.2rem solid var(--gray-m1);
   background: #FFFFFF 0% 0% no-repeat padding-box;
-  border: 2px solid #91959C;
-  border-radius: 6px;
+  border: 0.2rem solid #91959c;
+  border-radius: 0.6rem;
   text-align: center;
-  font: normal normal 600 16px/20px Muli;
+  font: normal normal 600 1.6rem/2rem Muli;
   letter-spacing: 0.32px;
   color: #545D63;
 }
 .detail-info .color .size .like-share img {
-  width: 18px;
-  height: 16px;
+  width: 1.8rem;
+  height: 1.6rem;
 }
 .detail-info .color h6 {
-  padding: 16px 0;
-  font: normal normal 600 20px/30px Muli;
-  letter-spacing: 0px;
+  padding: 1.6rem 0;
+  font: normal normal 600 2rem/3rem Muli;
+  letter-spacing: 0rem;
   color: #172026;
 }
 .detail-info .color img {
-  border-radius: 5px;
+  border-radius: 0.5rem;
 }
 .detail-info .color .image1 {
   background-color: #3D84FF;
@@ -5992,58 +6017,55 @@ nav .hamburger:hover {
   background-color: #91959c;
 }
 .detail-info .color .like-share {
-  padding-left: 78px;
-  padding-top: 24px;
+  padding-left: 7.8rem;
+  padding-top: 2.4rem;
   letter-spacing: 0.32px;
-  font: normal normal 600 16px/20px Muli;
+  font: normal normal 600 1.6rem/2rem Muli;
 }
 .detail-info .color .like-share .heart img {
-  width: 18px;
-  height: 18px;
+  width: 1.8rem;
+  height: 1.8rem;
 }
 .detail-info .color .like-share .share img {
-  width: 20px;
-  height: 18px;
-  margin-left: 32px;
+  width: 2rem;
+  height: 1.8rem;
+  margin-left: 3.2rem;
 }
 
 .description-product {
   text-align: left;
 }
 .description-product p {
-  font: normal normal normal 16px/24px Muli;
-  letter-spacing: 0px;
+  font: normal normal normal 1.6rem/2.4rem Muli;
+  letter-spacing: 0rem;
   color: #172026;
 }
 .description-product ul li {
   list-style-type: none;
-  font: normal normal 600 16px Muli;
-  letter-spacing: 0px;
+  font: normal normal 600 1.6rem Muli;
+  letter-spacing: 0rem;
   color: #172026;
 }
 .description-product h3 {
-  font: normal normal 600 36px/45px Source Serif Pro;
-  letter-spacing: 0px;
+  font: normal normal 600 3.6rem/4.5rem Source Serif Pro;
+  letter-spacing: 0rem;
   color: #172026;
 }
 .description-product h6 {
-  font: normal normal 600 20px/25px Muli;
-  letter-spacing: 0px;
+  font: normal normal 600 2rem/2.5rem Muli;
+  letter-spacing: 0rem;
   color: #172026;
-  padding-top: 24px;
-  padding-bottom: 16px;
+  padding-top: 2.4rem;
+  padding-bottom: 1.6rem;
 }
 
-@media (min-width: 0px) and (max-width: 767px) {
-  .detail-info .color .add-sub {
-    text-align: center;
-  }
-  .detail-info button .cart-add {
-    place-items: center;
+@media (min-width: 320px) and (max-width: 767px) {
+  .detail-info .catogatry {
+    display: none;
   }
 
-  .main h6, h3 {
-    text-align: center;
+  .full-image p {
+    display: block;
   }
 }
 .color {
@@ -6054,23 +6076,23 @@ nav .hamburger:hover {
   position: absolute;
   top: 0;
   left: 0;
-  width: 64px;
-  height: 40px;
+  width: 6.4rem;
+  height: 4rem;
   background-color: #E32F0F;
-  border: 2px solid #91959c;
-  border-radius: 3px;
+  border: 0.2rem solid #91959c;
+  border-radius: 0.3rem;
 }
 
 .filter-container2 {
-  width: 60px;
-  height: 40px;
-  border-radius: 6px;
+  width: 6rem;
+  height: 4rem;
+  border-radius: 0.6rem;
   display: inline-flex;
-  margin-right: 2px;
+  margin-right: 0.2rem;
 }
 
 .filter-color {
-  padding-bottom: 16px;
+  padding-bottom: 1.6rem;
 }
 
 .gradient {
@@ -6078,104 +6100,104 @@ nav .hamburger:hover {
 }
 
 .sidenav {
-  padding-top: 45px;
+  padding-top: 6.8rem;
   text-align: left;
   color: #181C24;
-  padding-right: 37px;
+  padding-right: 3.7rem;
 }
 .sidenav p {
-  font-size: 16px;
+  font: normal normal normal 1.6rem/2.4rem Muli;
 }
 .sidenav h6 {
-  font-size: 16px;
-  font-weight: 600;
-  padding-top: 15px;
-  padding-bottom: 17px;
+  font: normal normal normal 2rem/1.4rem Muli;
+  color: #181C24;
+  padding-top: 1.5rem;
+  padding-bottom: 1.7rem;
 }
 .sidenav h6 a {
   text-decoration: underline;
 }
 .sidenav h6 .filter {
-  font-size: 20px;
-  padding-top: 35px;
-  padding-bottom: 16px;
+  font-size: 2rem;
+  padding-top: 3.5rem;
+  padding-bottom: 1.6rem;
 }
 .sidenav hr {
-  padding-left: 10px;
+  padding-left: 1rem;
 }
 .sidenav label {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 .sidenav label span {
-  padding: 5px;
+  padding: 0.5rem;
 }
 .sidenav .option {
-  padding: 17px 0;
+  padding: 1.7rem 0;
 }
 
 .rectangle {
   background-color: #E5E5E7;
-  height: 4px;
-  margin-top: 128px;
+  height: 0.4rem;
+  margin-top: 12.8rem;
 }
 
 .main-footer {
-  padding-bottom: 32px;
+  padding-bottom: 3.2rem;
 }
 .main-footer ul {
-  padding-top: 16px;
+  padding-top: 1.6rem;
 }
 .main-footer ul li {
   list-style-type: none;
   text-align: left;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #545D63;
-  letter-spacing: 0px;
+  letter-spacing: 0rem;
   font-weight: normal;
 }
 .main-footer img {
-  padding: 11px 5px 5px 0;
+  padding: 1.1rem 0.5rem 0.5rem 0;
 }
 .main-footer .img1 {
-  width: 20px;
+  width: 2rem;
 }
 .main-footer .img2 {
-  width: 13px;
+  width: 1.3rem;
 }
 .main-footer .img3 {
-  width: 22px;
+  width: 2.2rem;
 }
 .main-footer .foot-head {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 600;
   color: #172026;
-  padding-top: 44px;
+  padding-top: 4.4rem;
   text-align: left;
 }
 
 .sub-footer {
-  padding: 28px 0;
+  padding: 2.8rem 0;
 }
 .sub-footer ul li {
   display: inline;
   list-style-type: none;
   text-decoration: underline;
-  padding-left: 19px;
-  font-size: 14px;
+  padding-left: 1.9rem;
+  font-size: 1.4rem;
   color: #172026;
-  font: normal normal normal 14px/18px Proxima Nova;
+  font: normal normal normal 1.4rem/1.8rem Proxima Nova;
 }
 .sub-footer .info {
   text-align: center;
-  font-style: normal normal normal 14px/18px Muli;
-  letter-spacing: 0px;
+  font-style: normal normal normal 1.4rem/1.8rem Muli;
+  letter-spacing: 0rem;
   color: #545D63;
 }
 .sub-footer .details {
   text-align: right;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 76.8rem) {
   .sub-footer .logo-align {
     text-align: center;
   }
@@ -6184,7 +6206,7 @@ nav .hamburger:hover {
   }
 }
 .card {
-  padding-bottom: 2rem;
+  padding: 2rem;
 }
 .card:not(:nth-child(3n)) {
   padding-right: 1.5rem;
@@ -6194,7 +6216,9 @@ nav .hamburger:hover {
 }
 .card .product-image img {
   width: 100%;
-  height: 38.2rem;
+  height: 30.2rem;
+  border: 1px solid #D1D3D6;
+  padding: 1.5rem;
 }
 .card .product-details {
   text-align: left;
@@ -6222,10 +6246,13 @@ nav .hamburger:hover {
 .pagination {
   list-style-type: none;
   display: inline-flex;
+  justify-content: center;
+  padding-bottom: 1rem;
 }
-.pagination ul li {
+.pagination ul li a {
   padding: 1rem;
-  color: black;
+  color: #172026;
+  font-size: 1.7rem;
 }
 
 .container .card-container {
@@ -6236,9 +6263,32 @@ nav .hamburger:hover {
   padding-bottom: 2.6rem;
 }
 
+.filter-body {
+  display: none;
+}
+.filter-body p {
+  text-align: left;
+  font: normal normal normal 1.6rem/2.4rem Muli;
+  padding: 0.6rem;
+}
+.filter-body .product-count {
+  text-align: center;
+}
+.filter-body .Filter {
+  display: inline-flex;
+  text-align: center;
+}
+.filter-body .Filter p {
+  padding: 2.5rem;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
-  .pagination {
+  .body-container {
     display: none;
+  }
+
+  .filter-body {
+    display: block;
   }
 }
 .container {
@@ -6280,34 +6330,42 @@ nav .hamburger:hover {
 }
 
 .header {
-  padding-top: 49px;
+  padding-top: 4.9rem;
 }
 
 .hero-container {
-  background-color: black;
+  background-color: #1B252C;
   color: #FFFFFF;
-  place-items: center;
-  padding: 85px;
-  font: normal normal 600 36px/42px Source Serif Pro;
+  justify-content: center;
+  padding: 9.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 30rem;
+}
+.hero-container h1 {
+  font: normal normal 600 3.6rem/4.2rem Source Serif Pro;
 }
 
 .hero-image {
-  padding: 16px 0;
+  height: 30rem;
+  padding: 1.6rem 0;
   width: 100%;
 }
 
 .subheader {
   visibility: hidden;
-  font: normal normal 600 36px/42px Source Serif Pro;
+  font: normal normal 600 3.6rem/4.2rem Source Serif Pro;
 }
 
 .bar {
-  width: 102px;
-  height: 8px;
+  width: 10.2rem;
+  height: 0.8rem;
   background-color: #1F39FF;
+  margin: 0 auto;
+  border: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 76.8rem) {
   .subheader {
     visibility: visible;
   }
@@ -6317,9 +6375,21 @@ nav .hamburger:hover {
     display: flex;
     flex-direction: column-reverse;
   }
+
+  .hero-container {
+    margin: -5.9rem 4rem 0;
+    height: -1vh;
+    width: 80vw !important;
+  }
+
+  .hero-image {
+    padding: 0;
+    width: 100%;
+    height: 17rem;
+  }
 }
 .logo {
-  height: 27px;
+  height: 2.7rem;
 }
 
 .logo-align {
@@ -6327,84 +6397,121 @@ nav .hamburger:hover {
 }
 
 .phn-logo {
-  height: 18px;
+  height: 1.8rem;
 }
 
 .cart-Container {
-  padding: 10px;
+  padding: 1rem;
 }
 .cart-Container h1 {
-  font: normal normal 600 48px/45px Source Serif Pro;
+  font: normal normal 600 4.8rem/4.5rem Source Serif Pro;
   letter-spacing: 0px;
   color: #172026;
 }
+.cart-Container .bar2 {
+  width: 13rem;
+  height: 0.8rem;
+  background-color: #1F39FF;
+  border: none;
+  margin-top: 1rem;
+}
 .cart-Container .cart-products {
   text-align: left;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .cart-Container .cart-products .added-product {
   display: flex;
 }
 .cart-Container .cart-products .added-product img {
   width: auto;
-  height: 199px;
+  height: 19.9rem;
+  border: 0.1rem solid #D1D3D6;
+}
+.cart-Container .cart-products .cart-prod-detail {
+  padding: 0.5rem;
+}
+.cart-Container .cart-products .cart-prod-detail b {
+  text-align: left;
+  font: normal normal 600 2rem/2.5rem Muli;
+  letter-spacing: 0px;
+  color: #172026;
+}
+.cart-Container .cart-products .cart-prod-detail p {
+  font: normal normal normal 1.6rem/2.4rem Muli;
+  letter-spacing: 0px;
+  color: #172026;
+}
+.cart-Container .shipping {
   border: 1px solid #D1D3D6;
 }
-.cart-Container .cart-products .added-product .cart-prod-detail {
-  padding: 5px;
-}
-.cart-Container .cart-products .added-product .cart-prod-detail b {
+.cart-Container .shipping p {
   text-align: left;
-  font: normal normal 600 20px/25px Muli;
+  font: normal normal normal 2rem/2.5rem Muli;
   letter-spacing: 0px;
   color: #172026;
+  padding: 2.4rem;
 }
-.cart-Container .cart-products .added-product .cart-prod-detail p {
-  font: normal normal normal 16px/24px Muli;
-  letter-spacing: 0px;
-  color: #172026;
+.cart-Container .shipping p:not(:nth-child(3n)) {
+  border-bottom: 1rem solid #D1D3D6;
+}
+.cart-Container .shipping p span {
+  float: right;
+  font: normal normal normal 1.4rem/2.1rem Muli;
+}
+.cart-Container .shipping p span img {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0.5rem;
 }
 .cart-Container .btn {
-  padding-top: 55px;
+  padding-top: 5.5rem;
 }
 .cart-Container .btn .btn-sub {
-  width: 32px;
-  height: 32px;
-  border: 2px solid #B5B7BC;
+  width: 3.2rem;
+  height: 3.2rem;
+  border: 0.2rem solid #B5B7BC;
   border-radius: 50%;
-  margin-right: 2px;
+  margin-right: 0.2rem;
 }
 .cart-Container .btn .btn-count {
-  width: 88px;
-  height: 40px;
-  border-radius: 8px;
-  margin-right: 2px;
-  border: 2px solid #B5B7BC;
+  width: 8.8rem;
+  height: 4rem;
+  border-radius: 0.8rem;
+  margin-right: 0.2rem;
+  border: 0.2rem solid #B5B7BC;
 }
 .cart-Container .option {
-  font: normal normal 600 12px/14px Muli;
+  font: normal normal 600 1.2rem/1.4rem Muli;
   letter-spacing: 0px;
   color: #172026;
-  padding: 3px 10px;
+  padding: 0.3rem 1rem;
+}
+.cart-Container .option span {
+  padding-left: 0.6rem;
+}
+.cart-Container .option img {
+  width: 1rem;
+  height: 1rem;
 }
 .cart-Container .pricing-total {
-  width: 435px;
-  height: 463px;
-  padding: 10px;
+  width: 43.5rem;
+  height: 46.3rem;
+  padding: 1rem;
   background: #FFFFFF 0% 0% no-repeat padding-box;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.0509803922);
+  box-shadow: 0px 0px 0.8rem rgba(0, 0, 0, 0.0509803922);
   border: 1px solid #D1D3D6;
-  border-radius: 2px;
+  border-radius: 0.2rem;
 }
 .cart-Container .pricing-total h4 {
-  padding-top: 32px;
-  padding-bottom: 24px;
+  padding-top: 3.2rem;
+  padding-bottom: 2.4rem;
   text-align: left;
+  font: normal normal 600 2rem/2.5rem Muli;
 }
 .cart-Container .pricing-total p {
   padding-bottom: 16px;
-  font: normal normal normal 16px/24px Muli;
+  font: normal normal normal 1.6rem/2.4rem Muli;
   letter-spacing: 0px;
   color: #172026;
   text-align: left;
@@ -6413,13 +6520,16 @@ nav .hamburger:hover {
   float: right;
 }
 .cart-Container .pricing-total .Primary-brand {
-  font: normal normal bold 14px/16px Muli;
+  font: normal normal bold 1.4rem/1.6rem Muli;
   letter-spacing: 0px;
   color: #FFFFFF;
   text-transform: uppercase;
   opacity: 1;
   background: #1F39FF 0% 0% no-repeat padding-box;
-  border-radius: 28px;
+  border-radius: 2.8rem;
   border: none;
-  padding: 11px 73px 11px 73px;
+  padding: 1.4rem 8.3rem 1.4rem 8.3rem;
+}
+.cart-Container .pricing-total .ppbtn {
+  padding: 1rem;
 }/*# sourceMappingURL=index.css.map */

@@ -1,42 +1,82 @@
 .cart-Container {
-    padding: 10px;
+    padding: 1rem;
 
     h1 {
-        font: normal normal 600 48px/45px Source Serif Pro;
+        font: normal normal 600 4.8rem/4.5rem Source Serif Pro;
         letter-spacing: 0px;
-        color: #172026;
+        color: $col-black;
+    }
+
+    .bar2 {
+        width: 13rem;
+        height: .8rem;
+        background-color: $primary-brand;
+        border: none;
+        margin-top: 1rem;
     }
 
     .cart-products {
         text-align: left;
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
 
         .added-product {
             display: flex;
 
             img {
                 width: auto;
-                height: 199px;
-                border: 1px solid #D1D3D6;
+                height: 19.9rem;
+                border: .1rem solid $col-Gray;
             }
 
-            .cart-prod-detail {
-                padding: 5px;
 
-                b {
-                    text-align: left;
-                    font: normal normal 600 20px/25px Muli;
-                    letter-spacing: 0px;
-                    color: #172026;
+
+        }
+
+        .cart-prod-detail {
+            padding: .5rem;
+
+            b {
+                text-align: left;
+                font: normal normal 600 2rem/2.5rem Muli;
+                letter-spacing: 0px;
+                color: $col-black;
+            }
+
+            p {
+                font: normal normal normal 1.6rem/2.4rem Muli;
+                letter-spacing: 0px;
+                color: $col-black;
+
+            }
+        }
+    }
+
+    .shipping {
+        border: 1px solid $col-Gray;
+        
+        p {
+            text-align: left;
+            &:not(:nth-child(3n)) {
+                border-bottom: 1rem solid $col-Gray;
+            }
+           
+            font: normal normal normal 2rem/2.5rem Muli;
+            letter-spacing: 0px;
+            color: $col-black;
+            padding: 2.4rem;
+
+
+            span {
+                float: right;
+                font: normal normal normal 1.4rem/2.1rem Muli;
+                img{
+                    width:1rem;
+                    height: 1rem;
+                    margin-left: .5rem;
+                    
                 }
-
-                p {
-                    font: normal normal normal 16px/24px Muli;
-                    letter-spacing: 0px;
-                    color: #172026;
-
-                }
+               
             }
 
         }
@@ -44,22 +84,22 @@
 
     .btn {
 
-        padding-top: 55px;
+        padding-top: 5.5rem ;
 
         .btn-sub {
-            width: 32px;
-            height: 32px;
-            border: 2px solid #B5B7BC;
+            width: 3.2rem;
+            height: 3.2rem;
+            border: .2rem solid $col-gray2;
             border-radius: 50%;
-            margin-right: 2px;
+            margin-right: .2rem;
         }
 
         .btn-count {
-            width: 88px;
-            height: 40px;
-            border-radius: 8px;
-            margin-right: 2px;
-            border: 2px solid #B5B7BC;
+            width: 8.8rem;
+            height: 4rem;
+            border-radius: .8rem;
+            margin-right: .2rem;
+            border: .2rem solid $col-gray2;
 
         }
 
@@ -68,49 +108,63 @@
 
 
     .option {
-        font: normal normal 600 12px/14px Muli;
+        font: normal normal 600 1.2rem/1.4rem Muli;
         letter-spacing: 0px;
-        color: #172026;
-        padding: 3px 10px;
+        color: $col-black;
+        padding: .3rem 1rem;
+        span{
+            padding-left: .6rem;
+        }
+        img{
+            width:1rem;
+            height: 1rem;
+           
+        }
     }
 
     .pricing-total {
-        
-        width: 435px;
-        height: 463px;
+
+        width: 43.5rem;
+        height: 46.3rem;
         // border: 1px solid black;
-        padding: 10px;
-        background: #FFFFFF 0% 0% no-repeat padding-box;
-        box-shadow: 0px 0px 8px #0000000D;
-        border: 1px solid #D1D3D6;
-        border-radius: 2px;
+        padding: 1rem;
+        background: $col-white 0% 0% no-repeat padding-box;
+        box-shadow: 0px 0px .8rem $shadow-gray;
+        border: 1px solid $col-Gray;
+        border-radius: .2rem;
 
         h4 {
-            padding-top: 32px;
-            padding-bottom: 24px;
+            padding-top: 3.2rem;
+            padding-bottom: 2.4rem;
             text-align: left;
+            font: normal normal 600 2rem/2.5rem Muli;
         }
 
         p {
             padding-bottom: 16px;
-            font: normal normal normal 16px/24px Muli;
+            font: normal normal normal 1.6rem/2.4rem Muli;
             letter-spacing: 0px;
-            color: #172026;
+            color: $col-black;
             text-align: left;
+
             span {
                 float: right;
             }
         }
-         .Primary-brand{
-            font: normal normal bold 14px/16px Muli;
+
+        .Primary-brand {
+            font: normal normal bold 1.4rem/1.6rem Muli;
             letter-spacing: 0px;
-            color: #FFFFFF;
+            color: $col-white;
             text-transform: uppercase;
             opacity: 1;
-            background: #1F39FF 0% 0% no-repeat padding-box;
-            border-radius: 28px;
+            background: $primary-brand 0% 0% no-repeat padding-box;
+            border-radius: 2.8rem;
             border: none;
-            padding: 11px 73px 11px 73px;
+            padding: 1.4rem 8.3rem 1.4rem 8.3rem;
+        }
+        .ppbtn{
+            padding: 1rem;
         }
 
     }

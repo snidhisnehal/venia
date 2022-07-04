@@ -1,12 +1,18 @@
 @import './var';
+
 nav {
-    padding-top: 16px;
-    
+    padding-top: 1.6rem;
+    top: 0;
+    position: sticky;
     place-items: center;
-    padding-bottom: 16px;
-    .logo-align{
-        display:flex;
-        
+    padding-bottom: 1.6rem;
+    z-index: 1;
+    background-color: $col-white;
+    border-bottom: .2rem solid $gray-l1;
+
+    .logo-align {
+        display: flex;
+
     }
 
     ul {
@@ -16,14 +22,14 @@ nav {
 
     ul li {
         display: inline;
-        padding-right: 0px;
-        padding-left: 32px;
-        padding-top: 14px;
-        height: 20px;
-        font-style: normal normal 600 16px/24px Muli;
-        font-size: 16px;
+        padding-right: 0rem;
+        padding-left: 3.2rem;
+        padding-top: 1.4rem;
+        height: 2rem;
+        font-style: normal normal 600 1.6rem/2.4rem Muli;
+        font-size: 1.6rem;
         font-weight: 600;
-        letter-spacing: 0px;
+        letter-spacing: 0rem;
         color: $black-2;
         opacity: 1;
 
@@ -32,76 +38,99 @@ nav {
         }
 
         .img-1 {
-            width: 24px;
-            height: 24px;
-            padding-right: 8px;
+            width: 2.4rem;
+            height: 2.4rem;
+            padding-right: .8rem;
         }
 
         .img-2 {
-            width: 21px;
-            height: 22px;
-            padding-right: 8px;
+            width: 2.1rem;
+            height: 2.2rem;
+            padding-right: .8rem;
         }
 
         .img-3 {
-            width: 22px;
-            height: 24px;
-            padding-right: 8px;
+            width: 2.2rem;
+            height: 2.4rem;
+            padding-right: .8rem;
 
         }
     }
-    .toggle{
-        padding-top: 18px;
-        padding-left: 18px;
+
+    .toggle {
+        padding-top: 1.8rem;
+        padding-left: 1.8rem;
     }
+
     .hamburger {
         // removes default border on button element
         border: 0;
-        height: 40px;
-        width: 40px;
-        padding: 0.5rem;
+        height: 4rem;
+        width: 4rem;
+        padding: 0.05rem;
         border-radius: 50%;
-        background-color:white;
+        background-color: $col-white;
         cursor: pointer;
         transition: background-color 0.2s ease-in-out;
-      // positions the icon to the right and center aligns it vertically
+        // positions the icon to the right and center aligns it vertically
         // position: absolute;
         top: 35%;
-        right: 25px;
+        right: 2.5rem;
         transform: translateY(-50%);
         display: none;
-      }
-      .hamburger:hover {
-        background-color: #2642af;
-      }
-      @media (min-width: 320px) and (max-width: 767px) {
+    }
+
+    // .hamburger:hover {
+    //     background-color: #2642af;
+    // }
+
+    @media (min-width: 32rem) and (max-width: 76.7rem) {
         .hamburger {
-                  display: block;
-                  
-                }
-                .logo{
-                    padding-left: 96px;
-               }
-         .main-menu {
-             display:none
-         }       
-         .sign-in  {
-            float:right;
+            display: block;
+
+        }
+
+        .logo {
+            padding-left: 9.6rem;
+        }
+
+        .main-menu {
+            display: none
+        }
+
+        .sign-in {
+            float: right;
             display: contents;
-            li{
-                padding-right: 12px;
+
+            li {
+                padding-right: 1.2rem;
             }
-            span{
+
+            span {
                 display: none;
             }
-            .Signin{
+
+            .Signin {
                 display: none;
             }
         }
     }
 }
 
-// @media screen and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
+    .sign-in {
+        span {
+            display: none
+        }
+
+        .img-2 {
+            display: none;
+        }
+       
+    }
+}
+
+// @media screen and (max-width: 768rem) {
 //     .hamburger {
 //       display: block;
 //     }

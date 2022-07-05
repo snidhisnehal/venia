@@ -57,9 +57,9 @@
         
         p {
             text-align: left;
-            &:not(:nth-child(3n)) {
-                border-bottom: 1rem solid $col-Gray;
-            }
+            // &:not(:nth-child(3n)) {
+            //     border-bottom: .1rem solid $col-Gray;
+            // }
            
             font: normal normal normal 2rem/2.5rem Muli;
             letter-spacing: 0px;
@@ -67,18 +67,20 @@
             padding: 2.4rem;
 
 
-            span {
+            span  {
                 float: right;
                 font: normal normal normal 1.4rem/2.1rem Muli;
-                img{
-                    width:1rem;
-                    height: 1rem;
-                    margin-left: .5rem;
-                    
-                }
+                
                
             }
+            
 
+        }
+        img{
+            
+           
+           padding-top: 2.5rem;
+            
         }
     }
 
@@ -170,4 +172,22 @@
     }
 
 
+}
+@media (min-width: 320px) and (max-width: 767px){
+    .cart-Container .btn{
+        padding-top: 0;
+    }
+    .cart-Container .pricing-total{
+        border:none;
+    }
+    
+
+.cart-Container .shipping p span{
+    float: left;
+    padding-top: 0;
+    padding-bottom: .5rem;
+}
+.cart-Container .shipping p{
+    padding: 1.4rem;
+}
 }

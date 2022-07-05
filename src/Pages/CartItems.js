@@ -1,18 +1,23 @@
 import React from 'react'
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import edit from '../Images/edit-2.svg';
 import trash from '../Images/trash-2.svg';
 import heart from '../Images/heart.svg';
 import down from '../Images/chevron-down.svg';
 import PPBTN from '../Images/PP_BTN.png';
-
+import { shipItem } from '../Scss/Componentes/Data/Data';
+import { handleAction } from '../redux/counter/counterSlice';
 //Shopping Cart
 
 const CartItems = () => {
 
     const cartData = useSelector((value) =>
         value.cart.item);
-
+    const dispatch = useDispatch();
+    const removItem = (data) => {
+        dispatch(handleAction.deletCartItem({ ...data }))
+        console.log(data);
+    }
     return (
 
         <div className='aem-Grid aem-Grid--12 container cart-Container'>
@@ -49,7 +54,7 @@ const CartItems = () => {
                                     </div>
                                     <div className='aem-GridColumn aem-GridColumn--default--2  aem-GridColumn--phone--hide'>
                                         <div className='option'><img src={edit} /><span>Edit item</span></div>
-                                        <div className='option'><img src={trash} /><span>Remove</span></div>
+                                        <div className='option' onClick={removItem}><img src={trash} /><span>Remove</span></div>
                                         <div className='option'><img src={heart} /><span>Save for later</span></div>
                                     </div>
                                 </div>
@@ -58,11 +63,23 @@ const CartItems = () => {
                             </>
                         )
                     })}
+                   { shipItem.map((todo) => {
+        return (
                     <div className='aem-Grid aem-Grid--12 shipping'>
-                        <p>Estimate your Shipping<span>Shipping to 91001 <img src={down}/></span></p>
-                        <p>Enter a Coupon Code<span>20% discount applied<img src={down}/></span></p>
-                        <p>Apply Gift Card<span></span><img src=''/></p>
-                    </div>
+                        <div className='aem-GridColumn aem-GridColumn--default--10 '>
+                            <div className='aem-Grid aem-Grid--12'>
+                            <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12'> 
+                            <p>{todo.detail1}</p>
+                            </div>
+                            <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12'>
+                                <p><span>{todo. detail2}</span></p> 
+                            </div>
+                            </div>
+                        </div>
+                        <div className='aem-GridColumn aem-GridColumn--default--2'><img src={down}/></div>
+
+                        
+                    </div>)})}
                 </div>
                 <div className='aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12  pricing-total'>
                     <h4>Pricing Summary</h4>

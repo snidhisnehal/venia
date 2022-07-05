@@ -18,6 +18,19 @@ export const counterSlice = createSlice({
         localStorage.setItem("loc",JSON.stringify(state.item));
     }
   },
+  deletCartItem(state, action) {
+    state.loc.map((cartproduct) => {
+      if (cartproduct.id === action.payload.id) {
+        const nextCart = state.loc.filter(
+          (item) => item.id !== cartproduct.id
+        );
+
+        state.cartproduct = nextCart;
+      }
+      localStorage.setItem("loc", JSON.stringify(state.cartproduct));
+      return state;
+    });
+  },
 })
 
 export const handleAction = counterSlice.actions

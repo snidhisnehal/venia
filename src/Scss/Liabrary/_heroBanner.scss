@@ -34,7 +34,7 @@
     border:none
 }
 
-@media (max-width: 76.8rem) {
+@media(min-width: 320px) and (max-width: 767px)  {
     .subheader{
         visibility: visible;
         

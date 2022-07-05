@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "f8f31f76f13271d64aad",
-    "url": "/venia/static/css/main.8f78c44f.chunk.css"
+    "revision": "d0c8d667516bbb1f2901",
+    "url": "/venia/static/css/main.9f023a94.chunk.css"
   },
   {
-    "revision": "f8f31f76f13271d64aad",
-    "url": "/venia/static/js/main.f8f31f76.chunk.js"
+    "revision": "d0c8d667516bbb1f2901",
+    "url": "/venia/static/js/main.d0c8d667.chunk.js"
   },
   {
-    "revision": "b4580c6e423a71b044a8",
-    "url": "/venia/static/js/1.b4580c6e.chunk.js"
+    "revision": "cc79fa3910fc97852656",
+    "url": "/venia/static/js/1.cc79fa39.chunk.js"
   },
   {
-    "revision": "613f4d59997715a50046",
-    "url": "/venia/static/js/2.613f4d59.chunk.js"
+    "revision": "9953d3a75699bb94b108",
+    "url": "/venia/static/js/2.9953d3a7.chunk.js"
   },
   {
-    "revision": "6e63942a400ee2825a62",
-    "url": "/venia/static/js/runtime~main.6e63942a.js"
+    "revision": "6f15599e1de08a1e1c81",
+    "url": "/venia/static/js/runtime~main.6f15599e.js"
   },
   {
     "revision": "39c4ffa5846b01ac241cb9ef73d9104e",
@@ -56,6 +56,10 @@ self.__precacheManifest = [
     "url": "/venia/static/media/twitter.dbdcf7aa.svg"
   },
   {
+    "revision": "7c15d647250fa3fea92b1b418534091b",
+    "url": "/venia/static/media/align-justify.7c15d647.svg"
+  },
+  {
     "revision": "9f1d94050acfffd6cbcec7a2e7377e5c",
     "url": "/venia/static/media/Hero-Banner.9f1d9405.png"
   },
@@ -84,7 +88,7 @@ self.__precacheManifest = [
     "url": "/venia/static/media/trash-2.e835055f.svg"
   },
   {
-    "revision": "f9f02235458ca59c63e33339614c15dd",
+    "revision": "e1b0b4b25922dfd6ef000383a5a1916c",
     "url": "/venia/index.html"
   }
 ];

@@ -36,10 +36,10 @@ const NAvbar = () => {
 
                 <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--6 aem-GridColumn--phone--hide main-menu">
                   <ul>
-                    <li><a>{prop.li1}</a></li>
-                    <li><a>{prop.li2}</a></li>
-                    <li><a>{prop.li3}</a></li>
-                    <li><a>{prop.li4}</a></li>
+                    <li><a href='#'>{prop.li1}</a></li>
+                    <li><a href='#'>{prop.li2}</a></li>
+                    <li><a href='#'>{prop.li3}</a></li>
+                    <li><a href='#'>{prop.li4}</a></li>
                   </ul>
                 </div>
                 <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--4  aem-GridColumn--phone--6 sign-in">

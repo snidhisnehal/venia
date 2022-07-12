@@ -8,13 +8,13 @@ const HeroBanner = () => {
           
             <h1>Women’s</h1>
             <h1 className='subheader'> Outerwear</h1>
-            <button className='bar '></button>
+            <button className='bar ' type='button'></button>
             
             
         </div>
         <div className='aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--phone--12'>
           
-            <img src={Image} alt='' className=' hero-image'/>
+            <img src={Image} alt='Girl-Image' className=' hero-image'/>
             
         </div>
       

@@ -24,14 +24,14 @@
         color: $col-black;
 
         .product-title {
-            font: normal normal bold 1.8rem/2rem Muli;
+            font: normal normal bold 1.8rem/2rem Mulish;
             font-size: 1.8rem;
             letter-spacing: 0px;
             opacity: 1;
         }
 
         .product-price {
-            font: normal normal 600 1.6rem/2rem Muli;
+            font: normal normal 600 1.6rem/2rem Mulish;
         }
 
         img {
@@ -77,7 +77,7 @@
     display: none;
     p {
         text-align: left;
-        font: normal normal normal 1.6rem/2.4rem Muli;
+        font: normal normal normal 1.6rem/2.4rem Mulish;
         padding: .6rem;
     }
     .product-count{
@@ -87,7 +87,7 @@
     .Filter {
         display: inline-flex;
         text-align: center;
-        p{padding: 2.5rem;}
+        figure{padding: 2.5rem;}
         
     }
 }

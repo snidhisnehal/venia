@@ -78,11 +78,12 @@ const SingleItem = ({data}) => {
                             <input type="text" value="1" style={{ borderRadius: "8px", width: "114px", height: "40px", textAlign: "center", border: "2px solid #91959C" }} />
                             <button style={{ borderRadius: "50%", width: "32px", height: "32px", marginLeft: "10px", border: "2px solid #91959C" }}>-</button>
                         </div>
+                       
                         
-                        <button className='cart-add' onClick={() => addProduct(data)} ><a>ADD TO CART</a></button>
+                        <button className='cart-add' onClick={() => addProduct(data)} ><a href='/cart'>ADD TO CART</a></button>
                         
                         <div className='like-share'>
-                            <span className='heart'><img src={Heart} />Save</span>
+                            <span className='heart'><img src={Heart} alt="Save"/>Save</span>
                             <span className='share'><img src={Share} alt="share" />Share</span>
                         </div>
                     </div>

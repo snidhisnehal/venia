@@ -16,9 +16,9 @@ const Footer = () => {
           <h6 className='foot-head'>{todo.header}</h6>
           <ul>
                 
-                <li><a>{todo.foot1}</a></li>
-                <li><a>{todo.foot2}</a></li>
-                <li><a>{todo.foot3}</a></li>
+                <li>{todo.foot1}</li>
+                <li>{todo.foot2}</li>
+                <li>{todo.foot3}</li>
                 <li><img src={todo.iconInst} className="img1"/><img src={todo.iconFac} className="img2"/><img src={todo.iconTwit} className="img3"/></li>
               </ul>
           </div>

@@ -16,21 +16,26 @@ export const counterSlice = createSlice({
             state.item.push(prod);
         }
         localStorage.setItem("loc",JSON.stringify(state.item));
-    }
+    },
+    deletCartItem(state, action) {
+      //  state.item.map((cartproduct) => {
+      //   if (cartproduct.id === action.payload.id) {
+       
+          const nextCart = state.item.filter(
+            (item) =>{ return item.id !== action.payload} 
+          );
+          state.item = nextCart;
+        // }
+        localStorage.setItem("loc", JSON.stringify(state.item));
+        return state;
+        
+      // }
+      // );
+    },
+    
   },
-  deletCartItem(state, action) {
-    state.loc.map((cartproduct) => {
-      if (cartproduct.id === action.payload.id) {
-        const nextCart = state.loc.filter(
-          (item) => item.id !== cartproduct.id
-        );
-
-        state.cartproduct = nextCart;
-      }
-      localStorage.setItem("loc", JSON.stringify(state.cartproduct));
-      return state;
-    });
-  },
+  
+  
 })
 
 export const handleAction = counterSlice.actions

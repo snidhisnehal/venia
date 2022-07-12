@@ -10,49 +10,49 @@ const SideNav = () => {
       <hr />
       <h6 className='attr'>Attribute</h6>
       <div className='option'>
-            <label className="filter-container">option
+            <label className="filter-container">Option
                 <input type="checkbox" />
                 <span className="checkmark"></span>
             </label>
-            <label className="filter-container">option
+            <label className="filter-container">Option
                 <input type="checkbox" />
                 <span className="checkmark"></span>
             </label>
-            <label className="filter-container">option
+            <label className="filter-container">Option
                 <input type="checkbox" />
                 <span className="checkmark"></span>
             </label>
-            <label className="filter-container">option
+            <label className="filter-container">Option
                 <input type="checkbox" />
                 <span className="checkmark"></span>
             </label>
 
         </div>
-      <h6><a>Show more</a></h6>
+      <h6><p>Show more</p></h6>
       <hr />
       <h6 className='attr'>Attribute</h6>
-      <div className='option'>
-            <label className="filter-container">option
+      <div className='Option'>
+            <label className="filter-container">Option
                 <input type="checkbox" />
                 <span className="checkmark"></span>
             </label>
-            <label className="filter-container">option
+            <label className="filter-container">Option
                 <input type="checkbox" />
                 <span className="checkmark"></span>
             </label>
-            <label className="filter-container">option
+            <label className="filter-container">Option
                 <input type="checkbox" />
                 <span className="checkmark"></span>
             </label>
-            <label className="filter-container">option
+            <label className="filter-container">Option
                 <input type="checkbox" />
                 <span className="checkmark"></span>
             </label>
-            <label className="filter-container">option
+            <label className="filter-container">Option
                 <input type="checkbox" />
                 <span className="checkmark"></span>
             </label>
-            <label className="filter-container">option
+            <label className="filter-container">Option
                 <input type="checkbox" />
                 <span className="checkmark"></span>
             </label>
@@ -62,36 +62,36 @@ const SideNav = () => {
       <Color/>
       <hr/>
       <h6 className='attr'>Attribute</h6>
-      <div className='option'>
-            <label className="filter-container">option
+      <div className='Option'>
+            <label className="filter-container">Option
                 <input type="checkbox" />
                 <span className="checkmark"></span>
             </label>
-            <label className="filter-container">option
+            <label className="filter-container">Option
                 <input type="checkbox" />
                 <span className="checkmark"></span>
             </label>
-            <label className="filter-container">option
+            <label className="filter-container">Option
                 <input type="checkbox" />
                 <span className="checkmark"></span>
             </label>
-            <label className="filter-container">option
+            <label className="filter-container">Option
                 <input type="checkbox" />
                 <span className="checkmark"></span>
             </label>
-            <label className="filter-container">option
+            <label className="filter-container">Option
                 <input type="checkbox" />
                 <span className="checkmark"></span>
             </label>
-            <label className="filter-container">option
+            <label className="filter-container">Option
                 <input type="checkbox" />
                 <span className="checkmark"></span>
             </label>
-            <label className="filter-container">option
+            <label className="filter-container">Option
                 <input type="checkbox" />
                 <span className="checkmark"></span>
             </label>
-            <label className="filter-container">option
+            <label className="filter-container">Option
                 <input type="checkbox" />
                 <span className="checkmark"></span>
             </label>

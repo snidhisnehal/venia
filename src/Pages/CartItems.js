@@ -7,6 +7,7 @@ import down from '../Images/chevron-down.svg';
 import PPBTN from '../Images/PP_BTN.png';
 import { shipItem } from '../Scss/Componentes/Data/Data';
 import { handleAction } from '../redux/counter/counterSlice';
+import IncDecCount from '../Scss/Componentes/Cart/IncDecCount';
 //Shopping Cart
 
 const CartItems = () => {
@@ -14,10 +15,10 @@ const CartItems = () => {
     const cartData = useSelector((value) =>
         value.cart.item);
     const dispatch = useDispatch();
-    const removItem = (data) => {
-        dispatch(handleAction.deletCartItem({ ...data }))
-        console.log(data);
-    }
+    // const removItem = (data) => {
+    //     dispatch(handleAction.deletCartItem({ ...data }))
+    //     console.log(data);
+    // }
     return (
 
         <div className='aem-Grid aem-Grid--12 container cart-Container'>
@@ -34,7 +35,7 @@ const CartItems = () => {
                                 <div className='aem-Grid aem-Grid--12 cart-products aem-Grid--phone--12'>
                                     <div className='aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--6 added-product'>
 
-                                        <div className='cart-prod-img'><img src={value.image} /></div>
+                                        <div className='cart-prod-img'><img src={value.image} alt='product'/></div>
                                     </div>
                                     <div className='aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--phone--6 '>
                                         <div className='aem-Grid aem-Grid--12'>
@@ -45,17 +46,19 @@ const CartItems = () => {
                                                 <p>color:storm</p>
                                                 <p>${value.price}</p>
                                             </div>
-                                            <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 btn'>
+                                            {/* <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 btn'>
                                                 <button className='btn-sub'>-</button>
                                                 <button className='btn-count'>1</button>
                                                 <button className='btn-sub'>+</button>
-                                            </div>
+                                            </div> */}
+                                            <IncDecCount/>
                                         </div>
                                     </div>
                                     <div className='aem-GridColumn aem-GridColumn--default--2  aem-GridColumn--phone--hide'>
-                                        <div className='option'><img src={edit} /><span>Edit item</span></div>
-                                        <div className='option' onClick={removItem}><img src={trash} /><span>Remove</span></div>
-                                        <div className='option'><img src={heart} /><span>Save for later</span></div>
+                                        <div className='option'><img src={edit} alt='Edit'/><span>Edit item</span></div>
+                                        <div className='option' onClick={()=>{return dispatch(handleAction.deletCartItem(value.id))}}>
+                                                 <img src={trash} alt='remove' /><span>Remove</span></div>
+                                        <div className='option'><img src={heart} alt='like'/><span>Save for later</span></div>
                                     </div>
                                 </div>
 
@@ -72,11 +75,11 @@ const CartItems = () => {
                             <p>{todo.detail1}</p>
                             </div>
                             <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12'>
-                                <p><span>{todo. detail2}</span></p> 
+                            <p><span>{todo.detail2}</span></p> 
                             </div>
                             </div>
                         </div>
-                        <div className='aem-GridColumn aem-GridColumn--default--2'><img src={down}/></div>
+                        <div className='aem-GridColumn aem-GridColumn--default--2'><img src={down} alt='down'/></div>
 
                         
                     </div>)})}
@@ -90,7 +93,7 @@ const CartItems = () => {
                     <p>Estimated shipping <span>FREE</span></p>
                     <p>Estimated Total <span>$ 233.68</span></p>
                     <button className='Primary-brand'>CHECKOUT</button>
-                    <div className='ppbtn'><img src={PPBTN}/></div>
+                    <div className='ppbtn'><img src={PPBTN} alt='button'/></div>
 
                 </div>
 

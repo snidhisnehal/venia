@@ -6,11 +6,21 @@ import { useState } from "react";
 import sliders from '../../../Images/sliders.svg';
 import uparrow from '../../../Images/arrow-up.svg';
 import downarrow from '../../../Images/arrow-down.svg';
+// import Filter from './Filter';
+
 
 
 
 export default function Card({ data }) {
   // let productTitle = title.split(' ').slice(0,3).join(' ');
+  //  constructor() {
+  //    super();
+  //    this.state={
+  //      products :data.products,
+  //      sort:"",
+  //    };
+  //  }
+
 
 
   const [page, setPage] = useState(1);
@@ -23,27 +33,33 @@ export default function Card({ data }) {
 
   const paginate = pageNumber => setPage(pageNumber);
   console.log(data.length);
+  
+  
 
+  
   return (
     <>
-      <div className='aem-Grid aem-Grid--12 aem-Grid--phone--12 body-container'>
+      {/* <div className='aem-Grid aem-Grid--12 aem-Grid--phone--12 body-container'>
         <p>{data.length}Results</p>
-        <select>
-          <option>Sort by Latest</option>
-          <option>Sort by price</option>
-        </select>
-      </div>
+
+        {/* <Filter count={this.state.data.length} sort={this.state.sort}></Filter> */}
+        {/* <Filter/>
+      </div> */} 
       <div className='filter-body'>
         <p>Clothing / Women’s / Outerwear</p>
         <div className='Filter'>
-          <p> <img src={sliders} alt='slider' />Filter Results</p>
-          <p> <img src={uparrow} alt='up-arrow' /> <img src={downarrow} alt='down-arrow' />Sort Products</p>
+          <figure> <img src={sliders} alt='slider' />Filter Results</figure>
+          <figure> <img src={uparrow} alt='up-arrow' /> <img src={downarrow} alt='down-arrow' />Sort Products</figure>
 
         </div>
         <p className='product-count'>{data.length}Results</p>
       </div>
+      {/* {
+          loading ? <h1 className=''>Loading...</h1>:
+          <> */}
+
       {currentData.map((prod) => {
-       let productTitle = prod.title.split(' ').slice(0, 3).join(' ');
+        let productTitle = prod.title.split(' ').slice(0, 3).join(' ');
         let id = prod.id;
         return (
           <div className='aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--6 aem-GridColumn--tablet--6 card '>
@@ -60,6 +76,7 @@ export default function Card({ data }) {
 
           </div>)
       })}
+      {/* </> } */}
       <div className='aem-Grid aem-Grid--12 pagination'>
         <Pagination
           activePage={page}

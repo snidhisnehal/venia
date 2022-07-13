@@ -76,7 +76,7 @@ export const counterSlice = createSlice({
         return cartTotal
       }, {
         total: 0,
-        quantity: 0
+        quantity: 0,
       })
 
       state.cartTotalQuantity = quantity;

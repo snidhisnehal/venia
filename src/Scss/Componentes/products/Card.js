@@ -6,22 +6,13 @@ import { useState } from "react";
 import sliders from '../../../Images/sliders.svg';
 import uparrow from '../../../Images/arrow-up.svg';
 import downarrow from '../../../Images/arrow-down.svg';
-// import Filter from './Filter';
+
 
 
 
 
 export default function Card({ data }) {
-  // let productTitle = title.split(' ').slice(0,3).join(' ');
-  //  constructor() {
-  //    super();
-  //    this.state={
-  //      products :data.products,
-  //      sort:"",
-  //    };
-  //  }
-
-
+ 
 
   const [page, setPage] = useState(1);
 
@@ -39,12 +30,7 @@ export default function Card({ data }) {
   
   return (
     <>
-      {/* <div className='aem-Grid aem-Grid--12 aem-Grid--phone--12 body-container'>
-        <p>{data.length}Results</p>
-
-        {/* <Filter count={this.state.data.length} sort={this.state.sort}></Filter> */}
-        {/* <Filter/>
-      </div> */} 
+      
       <div className='filter-body'>
         <p>Clothing / Women’s / Outerwear</p>
         <div className='Filter'>
@@ -54,9 +40,7 @@ export default function Card({ data }) {
         </div>
         <p className='product-count'>{data.length}Results</p>
       </div>
-      {/* {
-          loading ? <h1 className=''>Loading...</h1>:
-          <> */}
+      
 
       {currentData.map((prod) => {
         let productTitle = prod.title.split(' ').slice(0, 3).join(' ');
@@ -76,7 +60,7 @@ export default function Card({ data }) {
 
           </div>)
       })}
-      {/* </> } */}
+     
       <div className='aem-Grid aem-Grid--12 pagination'>
         <Pagination
           activePage={page}

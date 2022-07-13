@@ -7,7 +7,7 @@ const HeroBanner = () => {
         <div className='aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12 hero-container'>
           
             <h1>Women’s</h1>
-            <h1 className='subheader'> Outerwear</h1>
+            <h2 className='subheader'> Outerwear</h2>
             <button className='bar ' type='button'></button>
             
             

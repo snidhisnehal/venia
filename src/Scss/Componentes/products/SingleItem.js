@@ -9,7 +9,10 @@ import Share from '../../../Images/share-2.svg'
 import Down from '../../../Images/chevron-down.svg'
 import { useDispatch } from 'react-redux';
 import {handleAction} from '../../../redux/counter/counterSlice';
-
+import feather from '../../../Images/feather.svg'
+import layer from '../../../Images/layers.svg'
+import slack from '../../../Images/slack.svg'
+import sunrise from '../../../Images/sunrise.svg'
 
 const SingleItem = ({data}) => {
     
@@ -44,7 +47,7 @@ const SingleItem = ({data}) => {
 
                 <div className='aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12 detail-info'>
                     <p className='catogatry'>Clothing / Women’s / Outerwear</p>
-                     {/* <h3>{ productTitle}</h3>  */}
+                    
                     <h3>{data.title}</h3>
                     <b>${data.price}</b>
                     <p><img src={Star} alt="Star" className='checked' />
@@ -52,7 +55,6 @@ const SingleItem = ({data}) => {
                         <img src={Star} alt="Star" className='checked' />
                         <img src={Star} alt="Star" className='checked' />
                         <img src={Star} alt="Star" className='checked' />(<span>175</span>)</p>
-                    {/* <p className='descrition'>{data.description?.substr(0,80)}</p> */}
                     <p>{data.description}</p>
                     <hr />
                     <div className='color'>
@@ -80,7 +82,7 @@ const SingleItem = ({data}) => {
                         </div>
                        
                         
-                        <button className='cart-add' onClick={() => addProduct(data)} ><a href='/cart'>ADD TO CART</a></button>
+                        <button className='cart-add' onClick={() => addProduct(data)}><a href='/cart'>ADD TO CART</a></button>
                         
                         <div className='like-share'>
                             <span className='heart'><img src={Heart} alt="Save"/>Save</span>
@@ -107,14 +109,14 @@ const SingleItem = ({data}) => {
                         <h6>Details</h6>
                         <div className='aem-GridColumn aem-GridColumn--default--6'>
                             <ul>
-                                <li>Sweat-wicking</li>
-                                <li>Lightweight fabric</li>
+                                <li><img src={slack} alt="Feather" style={{width:"20px",height:"15px"}}/>Sweat-wicking</li>
+                                <li><img src={feather} alt="Feather" style={{width:"20px",height:"15px"}}/>Lightweight fabric</li>
                             </ul>
                         </div>
                         <div className='aem-GridColumn aem-GridColumn--default--6'>
                             <ul>
-                                <li>Breathable</li>
-                                <li>69% nylon, 31% lycra</li>
+                                <li><img src={ sunrise} alt="Feather" style={{width:"20px",height:"15px"}}/>Breathable</li>
+                                <li><img src={layer} alt="Feather" style={{width:"20px",height:"15px"}}/>69% nylon, 31% lycra</li>
                             </ul>
                         </div>
 

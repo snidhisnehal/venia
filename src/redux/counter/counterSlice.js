@@ -3,37 +3,86 @@ import { createSlice } from '@reduxjs/toolkit'
 export const counterSlice = createSlice({
   name: 'CartItems',
   initialState: {
+    cartTotalAmount:0,
+    cartTotalQuantity:0,
     item: localStorage.getItem("loc")?JSON.parse(localStorage.getItem("loc")):[],
+
   },
   reducers: {
     addItem(state, action){
-        const prod = action.payload;
-        const exist = state.item.find((val)=>val.id===prod.id);
-        if(exist){
-            return state.item.map((val)=>val.id===prod.id ? {...val, quantity:val.quantity +1}: val)
-        }else{
-            const prod = action.payload;
-            state.item.push(prod);
-        }
+       
+        const itemIndex = state.item.findIndex((item) => item.id === action.payload.id)
+
+      if (itemIndex >= 0) {
+        state.item[itemIndex].quantity += 1
+
+      } else {
+        const tempProduct = { ...action.payload, quantity: 1 }
+        state.item.push(tempProduct)
+
+      }
         localStorage.setItem("loc",JSON.stringify(state.item));
     },
     deletCartItem(state, action) {
-      //  state.item.map((cartproduct) => {
-      //   if (cartproduct.id === action.payload.id) {
+     
        
           const nextCart = state.item.filter(
             (item) =>{ return item.id !== action.payload} 
           );
           state.item = nextCart;
         // }
+        
         localStorage.setItem("loc", JSON.stringify(state.item));
         return state;
         
-      // }
-      // );
+     
     },
-    
-  },
+    decreaseCart(state, action) {
+      const itemIndex = state.item.findIndex(
+        (cartItem) => cartItem.id === action.payload.id
+      );
+      if (state.item[itemIndex].cartQuantity > 1) {
+        state.item[itemIndex].cartQuantity -= 1;
+      } else if (state.item[itemIndex].cartQuantity === 1) {
+        const nextCartItems = state.item.filter(
+          (cartItem) => cartItem.id !== action.payload.id
+        );
+
+        state.item = nextCartItems;
+      }
+     
+      
+
+      localStorage.setItem("loc", JSON.stringify(state.item));
+    },
+    increaseCart(state, action) {
+      const itemIndex = state.item.findIndex(
+        (cartItem) => cartItem.id === action.payload.id
+      );
+
+      state.item[itemIndex].cartQuantity += 1;
+      state.cartTotalAmount += state.item[itemIndex].price;
+
+      localStorage.setItem("loc", JSON.stringify(state.item));
+    },
+    cartCatculation(state, action) {
+      let { total, quantity } = state.item.reduce((cartTotal, item) => {
+        const { price, cartQuantity } = item
+        const itemTotal = price * cartQuantity;
+
+        cartTotal.total += itemTotal
+        cartTotal.quantity += cartQuantity
+
+        return cartTotal
+      }, {
+        total: 0,
+        quantity: 0
+      })
+
+      state.cartTotalQuantity = quantity;
+      state.cartTotalAmount = total;
+
+    }}
   
   
 })

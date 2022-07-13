@@ -1,23 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "3abf92cce222a3372d53",
-    "url": "/venia/static/css/main.d848bf0c.chunk.css"
+    "revision": "1036bff36a10f35e55b0",
+    "url": "/venia/static/css/main.41c68d93.chunk.css"
   },
   {
-    "revision": "3abf92cce222a3372d53",
-    "url": "/venia/static/js/main.3abf92cc.chunk.js"
+    "revision": "1036bff36a10f35e55b0",
+    "url": "/venia/static/js/main.1036bff3.chunk.js"
   },
   {
-    "revision": "cc79fa3910fc97852656",
-    "url": "/venia/static/js/1.cc79fa39.chunk.js"
+    "revision": "9d6d0ad7f97bf131636f",
+    "url": "/venia/static/js/1.9d6d0ad7.chunk.js"
   },
   {
-    "revision": "b963e2e9efa2f08a21e3",
-    "url": "/venia/static/js/2.b963e2e9.chunk.js"
+    "revision": "4fa901630cacb56d60d6",
+    "url": "/venia/static/css/2.24b14c47.chunk.css"
   },
   {
-    "revision": "6f15599e1de08a1e1c81",
-    "url": "/venia/static/js/runtime~main.6f15599e.js"
+    "revision": "4fa901630cacb56d60d6",
+    "url": "/venia/static/js/2.4fa90163.chunk.js"
+  },
+  {
+    "revision": "4bec0e47eebd91ffb895",
+    "url": "/venia/static/js/runtime~main.4bec0e47.js"
   },
   {
     "revision": "39c4ffa5846b01ac241cb9ef73d9104e",
@@ -80,6 +84,22 @@ self.__precacheManifest = [
     "url": "/venia/static/media/share-2.76b454cc.svg"
   },
   {
+    "revision": "180356eb6b3ca76bfa5d142a319cf435",
+    "url": "/venia/static/media/feather.180356eb.svg"
+  },
+  {
+    "revision": "a879cf43c202e7b1627a77ced9bfba75",
+    "url": "/venia/static/media/layers.a879cf43.svg"
+  },
+  {
+    "revision": "bac7317e7d53bfb97bcafeea5039671e",
+    "url": "/venia/static/media/slack.bac7317e.svg"
+  },
+  {
+    "revision": "456093aece2f20d766fa9855212b3426",
+    "url": "/venia/static/media/sunrise.456093ae.svg"
+  },
+  {
     "revision": "7a46c66fc5fa09517cc128b1e6f1b1d2",
     "url": "/venia/static/media/edit-2.7a46c66f.svg"
   },
@@ -88,7 +108,19 @@ self.__precacheManifest = [
     "url": "/venia/static/media/trash-2.e835055f.svg"
   },
   {
-    "revision": "0f7a6d7830073fc74e615681e2fe8b7e",
+    "revision": "04eb8fc57f27498e5ae37523e3bfb2c7",
+    "url": "/venia/static/media/revicons.04eb8fc5.woff"
+  },
+  {
+    "revision": "17629a5dfe0d3c3946cf401e1895f091",
+    "url": "/venia/static/media/revicons.17629a5d.ttf"
+  },
+  {
+    "revision": "2feb69ccb596730c72920c6ba3e37ef8",
+    "url": "/venia/static/media/revicons.2feb69cc.eot"
+  },
+  {
+    "revision": "6ec112a9a95173f4b0db3c7fa2515da3",
     "url": "/venia/index.html"
   }
 ];

@@ -131,17 +131,17 @@ export const selectColor = [
 ]
 export const shipItem = [
     {
-        id:0,
+        id:"ship1",
         detail1:"Estimate your Shipping",
         detail2: "Shipping to 91001 "
     },
     {
-        id:1,
+        id:"ship2",
         detail1:"Enter a Coupon Code",
         detail2:"20% discount applied"
     },
     {
-        id:2,
+        id:"ship3",
         detail1:"Apply Gift Card",
         detail2: ""
     }

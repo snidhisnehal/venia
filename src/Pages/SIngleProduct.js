@@ -3,11 +3,7 @@ import { useParams } from 'react-router-dom';
 import SingleItem from '../Scss/Componentes/products/SingleItem';
 
 const SIngleProduct = () => {
-    // const dispatch=useDispatch();
-    // const addProduct =(product)=>{
-    //     dispatch(handleAction.additem(...product))
-    //     console.log(product);
-    // }
+   
      const [data, setData] = useState([]);
      const { id } = useParams();
      const fetchData = () => {

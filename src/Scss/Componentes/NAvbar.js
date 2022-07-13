@@ -27,8 +27,8 @@ const NAvbar = () => {
                 {/* <div className="aem-GridColumn aem-GridColumn--default--2 logo"><span className="logo-one-text">V</span><span class=" ">ENIA</span></div> */}
                 <div className="aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--tablet--2 logo-align aem-GridColumn--phone--6">
                  
-               <a className='toggle ' href="" style={{paddingTop:"2px", paddingRight:"47px"}}>
-                 <img src={Toggle} style={{width:"20px", height:"20px"}}/>
+               <a className='toggle ' href="#" style={{paddingTop:"2px", paddingRight:"47px"}}>
+                 <img src={Toggle} alt="Toogle" style={{width:"20px", height:"20px"}}/>
               
                 </a>
                   <NavLink to='/'><img src={prop.Logo} alt="Logo" className='logo' /></NavLink>

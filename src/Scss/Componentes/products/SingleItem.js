@@ -13,6 +13,7 @@ import feather from '../../../Images/feather.svg'
 import layer from '../../../Images/layers.svg'
 import slack from '../../../Images/slack.svg'
 import sunrise from '../../../Images/sunrise.svg'
+import {Link} from 'react-router-dom'
 
 const SingleItem = ({data}) => {
     
@@ -82,7 +83,7 @@ const SingleItem = ({data}) => {
                         </div>
                        
                         
-                        <button className='cart-add' onClick={() => addProduct(data)}><a href='/cart'>ADD TO CART</a></button>
+                        <button className='cart-add' onClick={() => addProduct(data)}><Link to="/cart">ADD TO CART</Link></button>
                         
                         <div className='like-share'>
                             <span className='heart'><img src={Heart} alt="Save"/>Save</span>

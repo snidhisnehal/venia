@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/venia/precache-manifest.4bea67da71deaafa18300c0781ad217a.js"
+  "/venia/precache-manifest.e85ab4c39cdca35da892b0923e169a61.js"
 );
 
 workbox.clientsClaim();

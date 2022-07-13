@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "879800d2687db0f1ebf4",
+    "revision": "83f3954d9c1e7653d085",
     "url": "/venia/static/css/main.41c68d93.chunk.css"
   },
   {
-    "revision": "879800d2687db0f1ebf4",
-    "url": "/venia/static/js/main.879800d2.chunk.js"
+    "revision": "83f3954d9c1e7653d085",
+    "url": "/venia/static/js/main.83f3954d.chunk.js"
   },
   {
     "revision": "9d6d0ad7f97bf131636f",
@@ -120,7 +120,7 @@ self.__precacheManifest = [
     "url": "/venia/static/media/revicons.2feb69cc.eot"
   },
   {
-    "revision": "0d606419850ec1d25f141334ab453dfc",
+    "revision": "fdf26e6c6bb98bfe9d439585b1f5c278",
     "url": "/venia/index.html"
   }
 ];

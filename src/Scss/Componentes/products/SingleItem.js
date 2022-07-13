@@ -14,6 +14,7 @@ import layer from '../../../Images/layers.svg'
 import slack from '../../../Images/slack.svg'
 import sunrise from '../../../Images/sunrise.svg'
 import {Link} from 'react-router-dom'
+import  IncDecCount  from '../Cart/IncDecCount'
 
 const SingleItem = ({data}) => {
     
@@ -22,6 +23,7 @@ const SingleItem = ({data}) => {
         dispatch(handleAction.addItem({ ...data }))
         console.log(data);
     }
+    
 
     
     // let productTitle = data.title?.split(' ').slice(0,3).join(' ');
@@ -77,9 +79,10 @@ const SingleItem = ({data}) => {
                         <h6>Quantity</h6>
                         <div className='add-sub'>
                             
-                            <button style={{ borderRadius: "50%", width: "32px", height: "32px", marginRight: "10px", border: "2px solid #91959C" }}>+</button>
+                            {/* <button style={{ borderRadius: "50%", width: "32px", height: "32px", marginRight: "10px", border: "2px solid #91959C" }}>+</button>
                             <input type="text" value="1" style={{ borderRadius: "8px", width: "114px", height: "40px", textAlign: "center", border: "2px solid #91959C" }} />
-                            <button style={{ borderRadius: "50%", width: "32px", height: "32px", marginLeft: "10px", border: "2px solid #91959C" }}>-</button>
+                            <button style={{ borderRadius: "50%", width: "32px", height: "32px", marginLeft: "10px", border: "2px solid #91959C" }}>-</button> */}
+                             <IncDecCount/> 
                         </div>
                        
                         

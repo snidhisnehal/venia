@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "6208510106c22586edbd",
+    "revision": "899cd846eea76f7583ec",
     "url": "/venia/static/css/main.41c68d93.chunk.css"
   },
   {
-    "revision": "6208510106c22586edbd",
-    "url": "/venia/static/js/main.62085101.chunk.js"
+    "revision": "899cd846eea76f7583ec",
+    "url": "/venia/static/js/main.899cd846.chunk.js"
   },
   {
     "revision": "9d6d0ad7f97bf131636f",
@@ -112,15 +112,15 @@ self.__precacheManifest = [
     "url": "/venia/static/media/revicons.17629a5d.ttf"
   },
   {
-    "revision": "04eb8fc57f27498e5ae37523e3bfb2c7",
-    "url": "/venia/static/media/revicons.04eb8fc5.woff"
-  },
-  {
     "revision": "2feb69ccb596730c72920c6ba3e37ef8",
     "url": "/venia/static/media/revicons.2feb69cc.eot"
   },
   {
-    "revision": "77adb8b281949eb2e15ffa2831257217",
+    "revision": "04eb8fc57f27498e5ae37523e3bfb2c7",
+    "url": "/venia/static/media/revicons.04eb8fc5.woff"
+  },
+  {
+    "revision": "e43e2432ed7ccc787b118f240061335a",
     "url": "/venia/index.html"
   }
 ];

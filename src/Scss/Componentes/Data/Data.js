@@ -39,14 +39,20 @@ export const List2 = [
         header: "About Us",
         foot1: "Our Story",
         foot2: "Careers",
-        foot3: ""
+        foot3: "",
+        iconInst: "",
+        iconFac: "",
+        iconTwit: ""
     },
     {
         id: 2,
         header: "Help",
         foot1: "Contact Us",
         foot2: "Order Status",
-        foot3: "Returns"
+        foot3: "Returns",
+        iconInst:"",
+        iconFac: "",
+        iconTwit: ""
     },
     {
         id: 3,

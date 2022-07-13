@@ -9,7 +9,7 @@ import {HashRouter} from 'react-router-dom';
 import { handleAction } from './redux/counter/counterSlice';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-store.dispatch(handleAction .cartCatculation())
+store.dispatch(handleAction.cartCatculation())
 root.render(
   <HashRouter>
   <React.StrictMode>

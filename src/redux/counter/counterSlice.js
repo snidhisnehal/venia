@@ -24,19 +24,13 @@ export const counterSlice = createSlice({
         localStorage.setItem("loc",JSON.stringify(state.item));
     },
     deletCartItem(state, action) {
-     
-       
           const nextCart = state.item.filter(
             (item) =>{ return item.id !== action.payload} 
           );
           state.item = nextCart;
-        
-        
-        localStorage.setItem("loc", JSON.stringify(state.item));
+          localStorage.setItem("loc", JSON.stringify(state.item));
         return state;
-        
-     
-    },
+      },
     decreaseCart(state, action) {
       const itemIndex = state.item.findIndex(
         (cartItem) => cartItem.id === action.payload.id

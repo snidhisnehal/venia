@@ -73,7 +73,7 @@ const CartItems = () => {
 
         <div className='aem-Grid aem-Grid--12 container cart-Container'>
             <h1>Your Shopping Bag</h1>
-            <button className='bar2'></button>
+            <button type='button' className='bar2'></button>
             <div className='aem-Grid aem-Grid--12 container cart-Container'>
                 <div className='aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--12  '>
 
@@ -97,16 +97,16 @@ const CartItems = () => {
                                                 <p>${value.price}</p>
                                             </div>
                                             {/* <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 btn'>
-                                                <button className='btn-sub'>-</button>
-                                                <button className='btn-count'>1</button>
-                                                <button className='btn-sub'>+</button>
+                                                <button type="button" className='btn-sub'>-</button>
+                                                <button type="button" className='btn-count'>1</button>
+                                                <button type="button" className='btn-sub'>+</button>
                                             </div> */}
                                             {/* <IncDecCount/> */}
                                             <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 btn'>
-                                                <button className='btn-sub' onClick={() => handleDecreaseCart(value)}>-</button>
+                                                <button type='button' className='btn-sub' onClick={() => handleDecreaseCart(value)}>-</button>
                                                 {/* <input type="text" className="btn-count" value={num}  onClick={value.cartQuantity} onChange={handleChange} style={{textAlign:"center"}}/> */}
                                                 <div className="btn-count" style={{display:"inline" ,padding:"10px 20px"}}>{value.quantity}</div>
-                                                <button className='btn-sub' onClick={() => handleIncreaseCart(value)}>+</button>
+                                                <button type='button' className='btn-sub' onClick={() => handleIncreaseCart(value)}>+</button>
                                             </div> 
                                         </div>
                                     </div>
@@ -182,7 +182,7 @@ const CartItems = () => {
                         return (
                             <>
                                <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn aem-GridColumn--phone--hide carousalCard" >
-                            <img  src={product.image}  alt="Product Image" style={{height:"28vh",width:"13vw"}}/>
+                            <img  src={product.image}  alt="Product" style={{height:"28vh",width:"13vw"}}/>
                                 {/* {/ <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--7"> /} */}
                                     <h4>{product.title}</h4>
                                     <p>${product.price}</p>

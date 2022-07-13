@@ -27,7 +27,7 @@ const NAvbar = () => {
                 {/* <div className="aem-GridColumn aem-GridColumn--default--2 logo"><span className="logo-one-text">V</span><span class=" ">ENIA</span></div> */}
                 <div className="aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--tablet--2 logo-align aem-GridColumn--phone--6">
                  
-               <a className='toggle ' href="#" style={{paddingTop:"2px", paddingRight:"47px"}}>
+               <a className='toggle ' href="/" style={{paddingTop:"2px", paddingRight:"47px"}}>
                  <img src={Toggle} alt="Toogle" style={{width:"20px", height:"20px"}}/>
               
                 </a>
@@ -36,10 +36,10 @@ const NAvbar = () => {
 
                 <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--6 aem-GridColumn--phone--hide main-menu">
                   <ul>
-                    <li><a href='#'>{prop.li1}</a></li>
-                    <li><a href='#'>{prop.li2}</a></li>
-                    <li><a href='#'>{prop.li3}</a></li>
-                    <li><a href='#'>{prop.li4}</a></li>
+                    <li><a href='/'>{prop.li1}</a></li>
+                    <li><a href='/'>{prop.li2}</a></li>
+                    <li><a href='/'>{prop.li3}</a></li>
+                    <li><a href='/'>{prop.li4}</a></li>
                   </ul>
                 </div>
                 <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--4  aem-GridColumn--phone--6 sign-in">

@@ -19,7 +19,7 @@ const Footer = () => {
                 <li>{todo.foot1}</li>
                 <li>{todo.foot2}</li>
                 <li>{todo.foot3}</li>
-                <li><img src={todo.iconInst} className="img1" alt="Insta"/><img src={todo.iconFac}  alt="Facbook" className="img2"/><img src={todo.iconTwit} className="img3"/></li>
+                <li><img src={todo.iconInst} className="img1" alt='Insta'/><img src={todo.iconFac} className="img2" alt="Facebook"/><img src={todo.iconTwit} className="img3" alt="Twitter"/></li>
               </ul>
           </div>
           

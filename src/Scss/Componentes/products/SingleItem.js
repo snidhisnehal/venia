@@ -70,23 +70,23 @@ const SingleItem = ({data}) => {
                         </div>
                         <h6>Size</h6>
                         <div className='size'>
-                            <span><button>XS</button></span>
-                            <span><button>S</button></span>
-                            <span><button>M</button></span>
-                            <span><button>L</button></span>
-                            <span><button>XL</button></span>
+                            <span><button type='button'>XS</button></span>
+                            <span><button type='button'>S</button></span>
+                            <span><button type='button'>M</button></span>
+                            <span><button type='button'>L</button></span>
+                            <span><button type='button'>XL</button></span>
                         </div>
                         <h6>Quantity</h6>
                         <div className='add-sub'>
                             
-                            {/* <button style={{ borderRadius: "50%", width: "32px", height: "32px", marginRight: "10px", border: "2px solid #91959C" }}>+</button>
+                            {/* <button type='button' style={{ borderRadius: "50%", width: "32px", height: "32px", marginRight: "10px", border: "2px solid #91959C" }}>+</button>
                             <input type="text" value="1" style={{ borderRadius: "8px", width: "114px", height: "40px", textAlign: "center", border: "2px solid #91959C" }} />
-                            <button style={{ borderRadius: "50%", width: "32px", height: "32px", marginLeft: "10px", border: "2px solid #91959C" }}>-</button> */}
+                            <button type='button' style={{ borderRadius: "50%", width: "32px", height: "32px", marginLeft: "10px", border: "2px solid #91959C" }}>-</button> */}
                              <IncDecCount/> 
                         </div>
                        
                         
-                        <button className='cart-add' onClick={() => addProduct(data)}><Link to="/cart">ADD TO CART</Link></button>
+                        <button type='button' className='cart-add' onClick={() => addProduct(data)}><Link to="/cart">ADD TO CART</Link></button>
                         
                         <div className='like-share'>
                             <span className='heart'><img src={Heart} alt="Save"/>Save</span>

@@ -1,7 +1,7 @@
 {
   "main.css": "/venia/static/css/main.41c68d93.chunk.css",
-  "main.js": "/venia/static/js/main.62085101.chunk.js",
-  "main.js.map": "/venia/static/js/main.62085101.chunk.js.map",
+  "main.js": "/venia/static/js/main.899cd846.chunk.js",
+  "main.js.map": "/venia/static/js/main.899cd846.chunk.js.map",
   "static/js/1.9d6d0ad7.chunk.js": "/venia/static/js/1.9d6d0ad7.chunk.js",
   "static/js/1.9d6d0ad7.chunk.js.map": "/venia/static/js/1.9d6d0ad7.chunk.js.map",
   "static/css/2.24b14c47.chunk.css": "/venia/static/css/2.24b14c47.chunk.css",
@@ -30,10 +30,10 @@
   "static/media/sunrise.svg": "/venia/static/media/sunrise.456093ae.svg",
   "static/media/edit-2.svg": "/venia/static/media/edit-2.7a46c66f.svg",
   "static/media/trash-2.svg": "/venia/static/media/trash-2.e835055f.svg",
-  "static/media/styles.css": "/venia/static/media/revicons.2feb69cc.eot",
-  "static/css/main.41c68d93.chunk.css.map": "/venia/static/css/main.41c68d93.chunk.css.map",
+  "static/media/styles.css": "/venia/static/media/revicons.04eb8fc5.woff",
   "static/css/2.24b14c47.chunk.css.map": "/venia/static/css/2.24b14c47.chunk.css.map",
+  "static/css/main.41c68d93.chunk.css.map": "/venia/static/css/main.41c68d93.chunk.css.map",
   "index.html": "/venia/index.html",
-  "precache-manifest.6a0790ec01540c75f0fd04c2c66e4d68.js": "/venia/precache-manifest.6a0790ec01540c75f0fd04c2c66e4d68.js",
+  "precache-manifest.4bea67da71deaafa18300c0781ad217a.js": "/venia/precache-manifest.4bea67da71deaafa18300c0781ad217a.js",
   "service-worker.js": "/venia/service-worker.js"
 }

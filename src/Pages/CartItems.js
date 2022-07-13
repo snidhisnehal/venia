@@ -105,7 +105,7 @@ const CartItems = () => {
                                             <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 btn'>
                                                 <button className='btn-sub' onClick={() => handleDecreaseCart(value)}>-</button>
                                                 {/* <input type="text" className="btn-count" value={num}  onClick={value.cartQuantity} onChange={handleChange} style={{textAlign:"center"}}/> */}
-                                                <div className="btn-count" style={{display:"inline" ,padding:"10px 20px"}}>{value.cartQuantity}</div>
+                                                <div className="btn-count" style={{display:"inline" ,padding:"10px 20px"}}>{value.quantity}</div>
                                                 <button className='btn-sub' onClick={() => handleIncreaseCart(value)}>+</button>
                                             </div> 
                                         </div>

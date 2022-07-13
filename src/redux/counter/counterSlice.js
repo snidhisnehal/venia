@@ -30,7 +30,7 @@ export const counterSlice = createSlice({
             (item) =>{ return item.id !== action.payload} 
           );
           state.item = nextCart;
-        // }
+        
         
         localStorage.setItem("loc", JSON.stringify(state.item));
         return state;
@@ -41,9 +41,9 @@ export const counterSlice = createSlice({
       const itemIndex = state.item.findIndex(
         (cartItem) => cartItem.id === action.payload.id
       );
-      if (state.item[itemIndex].cartQuantity > 1) {
-        state.item[itemIndex].cartQuantity -= 1;
-      } else if (state.item[itemIndex].cartQuantity === 1) {
+      if (state.item[itemIndex].quantity > 1) {
+        state.item[itemIndex].quantity -= 1;
+      } else if (state.item[itemIndex].quantity === 1) {
         const nextCartItems = state.item.filter(
           (cartItem) => cartItem.id !== action.payload.id
         );
@@ -60,18 +60,18 @@ export const counterSlice = createSlice({
         (cartItem) => cartItem.id === action.payload.id
       );
 
-      state.item[itemIndex].cartQuantity += 1;
+      state.item[itemIndex].quantity += 1;
       state.cartTotalAmount += state.item[itemIndex].price;
 
       localStorage.setItem("loc", JSON.stringify(state.item));
     },
     cartCatculation(state, action) {
       let { total, quantity } = state.item.reduce((cartTotal, item) => {
-        const { price, cartQuantity } = item
-        const itemTotal = price * cartQuantity;
+        const { price, quantity } = item
+        const itemTotal = price * quantity;
 
         cartTotal.total += itemTotal
-        cartTotal.quantity += cartQuantity
+        cartTotal.quantity += quantity
 
         return cartTotal
       }, {
